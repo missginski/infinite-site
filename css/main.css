@@ -1,3 +1,19 @@
 .logo {
-	max-width: 500px;
+	max-width: 450px;
+}
+.footer-text {
+	font-size: 1.25rem;
+}
+.navbar {
+	padding: 0;
+}
+main {
+	padding-top: 5.65rem;
+}
+.contact-social {
+	list-style: none;
+	padding-left: .25rem;
+}
+.contact-social li {
+	display: inline-block;
 }
