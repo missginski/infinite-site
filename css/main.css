@@ -17,3 +17,7 @@ main {
 .contact-social li {
 	display: inline-block;
 }
+
+.contact-card h3 {
+	text-transform: none;
+}
