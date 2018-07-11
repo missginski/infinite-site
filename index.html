@@ -1,61 +1,97 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Infinite Studios</title>
+<head>
+	<meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Infinite Studios</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/bootstrap_lux.css" type="text/css" />
+	<!-- Stylesheet  ================================================== -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/main.css" type="text/css" />
+	<!-- <link rel="stylesheet" type="text/css"  href="css/style.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
+	<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet"> -->
+</head>
 
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-		<link rel="stylesheet" href="css/bootstrap_lux.css" type="text/css" />
-		<link rel="stylesheet" href="css/style.css" type="text/css" />
-		<link rel="stylesheet" href="css/main.css" type="text/css" />
-	</head>
-	<body>
-	<div id="top"></div>
-	<!-- Start Header Area -->
-	<header>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-		  <a class="navbar-brand" href="index.html"><img src="images/headerlogo.jpg" class="logo" /></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation" style="">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
-			<div class="collapse navbar-collapse" id="navbarColor03">
-		    <ul class="navbar-nav ml-auto">
-		      <li class="nav-item active">
-		        <a class="nav-link" href="#top">Home</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="about.html">About</a>
-		      </li>
-					<li class="nav-item">
-		        <a class="nav-link" href="gear.html">Gear</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="clients.html">Clients</a>
-		      </li>
-					<li class="nav-item">
-		        <a class="nav-link" href="services.html">Services</a>
-		      </li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Blog</a>
-					</li>
 
-		      <!-- <li class="nav-item">
-		        <a class="nav-link" href="#">The Studio</a>
-		      </li>
-					<li class="nav-item">
-		        <a class="nav-link" href="#">Music</a>
-		      </li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Contact</a>
-					</li> -->
-		    </ul>
-		  </div>
-		</nav>
+<body>
+<!-- Start Header Area -->
+<div class="site-wrapper">
+
+	<header id="site-header">
+		<div class="container navbar-wrapper">
+			<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+			  <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo" alt="logo" /></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainnav" aria-controls="mainnav" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+				<div class="collapse navbar-collapse" id="mainnav">
+
+			    <ul class="navbar-nav ml-auto">
+			      <li class="nav-item dropdown active">
+			        <a class="nav-link dropdown-toggle" href="#top" id="mainnav" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" href="services.html">Services</a>
+			          <a class="dropdown-item" href="portfolio.html">The Studio</a>
+			        </div>
+						</li>
+
+
+			      <li class="nav-item">
+			        <a class="nav-link" href="about.html">About</a>
+			      </li>
+
+						<a class="nav-link dropdown-toggle" href="#top" id="mainnav" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="services.html">Services</a>
+							<a class="dropdown-item" href="portfolio.html">The Studio</a>
+						</div>
+
+
+
+						<li class="nav-item">
+			        <a class="nav-link" href="gear.html">Gear</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="clients.html">Clients</a>
+			      </li>
+						<li class="nav-item">
+			        <a class="nav-link" href="services.html">Services</a>
+			      </li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Blog</a>
+						</li>
+
+			      <!-- <li class="nav-item">
+			        <a class="nav-link" href="#">The Studio</a>
+			      </li>
+						<li class="nav-item">
+			        <a class="nav-link" href="#">Music</a>
+			      </li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contact</a>
+						</li> -->
+			    </ul>
+			  </div>
+			</nav>
+		</div>	<!--- container --------->
 	</header>
 	<!-- End Header Area -->
+
+
+
+
+
+
+
 	<!-- Start Banner Area -->
 	<main role="main">
 		<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
@@ -98,213 +134,436 @@
       </div>
     </div>
 		<!-- End Services Area -->
-
-
-
-
-
-
-		
 		<!-- Start Studio Area -->
 		<h2 class="section-title text-center mt-5">The Studio</h2>
 		<hr class="mb-4 w-50 mx-auto" />
+
+		<!-- Portfolio Section -->
+		<div id="portfolio">
+		  <div class="container">
+		    <div class="section-title">
+		      <h2 class="text-center">The Studio</h2>
+		    </div>
+		    <div class="categories">
+		      <ul class="cat">
+		        <li>
+		          <ol class="type">
+		            <li><a href="#" data-filter="*" class="active">All</a></li>
+		            <li><a href="#" data-filter=".lounge">Lounge</a></li>
+		            <li><a href="#" data-filter=".controlroom">Control Room</a></li>
+		            <li><a href="#" data-filter=".isoroom">Iso Room</a></li>
+								<li><a href="#" data-filter=".gear">Gear</a></li>
+		          </ol>
+		        </li>
+		      </ul>
+		    </div>
+		    <div class="row">
+		      <div class="portfolio-items">
+		        <div class="col-sm-6 col-md-4 controlroom">
+		          <div class="portfolio-item">
+		            <div class="hover-bg"> <a href="images/equipment.jpg" title="Control Room" data-lightbox-gallery="studio-gallery">
+		              <div class="hover-text">
+		                <div class="overlay-caption">
+		                  <div class="overlay-content">
+		                    <h4>Control Room</h4>
+		                  </div>
+		                </div>
+		              </div>
+		              <img src="images/equipment.jpg" class="img-responsive" alt="Control Room"> </a> </div>
+		          </div>
+		        </div>
+		        <div class="col-sm-6 col-md-4 lounge">
+		          <div class="portfolio-item">
+		            <div class="hover-bg"> <a href="images/couch.jpg" title="Lounge" data-lightbox-gallery="studio-gallery">
+		              <div class="hover-text">
+		                <div class="overlay-caption">
+		                  <div class="overlay-content">
+		                    <h4>Lounge</h4>
+		                  </div>
+		                </div>
+		              </div>
+		              <img src="images/couch.jpg" class="img-responsive" alt="Lounge"> </a> </div>
+		          </div>
+		        </div>
+		        <div class="col-sm-6 col-md-4 gear">
+		          <div class="portfolio-item">
+		            <div class="hover-bg"> <a href="images/microphone.jpg" title="Gear" data-lightbox-gallery="studio-gallery">
+		              <div class="hover-text">
+		                <div class="overlay-caption">
+		                  <div class="overlay-content">
+		                    <h4>Gear</h4>
+		                  </div>
+		                </div>
+		              </div>
+		              <img src="images/microphone.jpg" class="img-responsive" alt="Gear"> </a> </div>
+		          </div>
+		        </div>
+		        <div class="col-sm-6 col-md-4 lounge">
+		          <div class="portfolio-item">
+		            <div class="hover-bg"> <a href="images/cokemachine.jpg" title="Lounge" data-lightbox-gallery="studio-gallery">
+		              <div class="hover-text">
+		                <div class="overlay-caption">
+		                  <div class="overlay-content">
+		                    <h4>Lounge</h4>
+		                  </div>
+		                </div>
+		              </div>
+		              <img src="images/cokemachine.jpg" class="img-responsive" alt="Lounge"> </a> </div>
+		          </div>
+		        </div>
+		        <div class="col-sm-6 col-md-4 gear">
+		          <div class="portfolio-item">
+		            <div class="hover-bg"> <a href="images/keyboards.jpg" title="Gear" data-lightbox-gallery="studio-gallery">
+		              <div class="hover-text">
+		                <div class="overlay-caption">
+		                  <div class="overlay-content">
+		                    <h4>Gear</h4>
+		                  </div>
+		                </div>
+		              </div>
+		              <img src="images/keyboards.jpg" class="img-responsive" alt="Gear"> </a> </div>
+		          </div>
+		        </div>
+		        <div class="col-sm-6 col-md-4 controlroom">
+		          <div class="portfolio-item">
+		            <div class="hover-bg"> <a href="images/equipment3.jpg" title="Control Room" data-lightbox-gallery="studio-gallery">
+		              <div class="hover-text">
+		                <div class="overlay-caption">
+		                  <div class="overlay-content">
+		                    <h4>Control Room</h4>
+		                  </div>
+		                </div>
+		              </div>
+		              <img src="images/equipment3.jpg" class="img-responsive" alt="Control Room"> </a> </div>
+		          </div>
+		        </div>
+		        <div class="col-sm-6 col-md-4 controlroom">
+		          <div class="portfolio-item">
+		            <div class="hover-bg"> <a href="images/equipment2.jpg" title="Control Room" data-lightbox-gallery="studio-gallery">
+		              <div class="hover-text">
+		                <div class="overlay-caption">
+		                  <div class="overlay-content">
+		                    <h4>Control Room</h4>
+		                  </div>
+		                </div>
+		              </div>
+		              <img src="images/equipment2.jpg" class="img-responsive" alt="Control Room"> </a> </div>
+		          </div>
+		        </div>
+		        <div class="col-sm-6 col-md-4 isoroom">
+		          <div class="portfolio-item">
+		            <div class="hover-bg"> <a href="images/isoroom.jpg" title="Iso Room" data-lightbox-gallery="studio-gallery">
+		              <div class="hover-text">
+		                <div class="overlay-caption">
+		                  <div class="overlay-content">
+		                    <h4>Iso Room</h4>
+		                  </div>
+		                </div>
+		              </div>
+		              <img src="images/isoroom.jpg" class="img-responsive" alt="Iso Room"> </a> </div>
+		          </div>
+		        </div>
+		        <div class="col-sm-6 col-md-4 lounge">
+		          <div class="portfolio-item">
+		            <div class="hover-bg"> <a href="images/kitchen.jpg" title="Lounge" data-lightbox-gallery="studio-gallery">
+		              <div class="hover-text">
+		                <div class="overlay-caption">
+		                  <div class="overlay-content">
+		                    <h4>Lounge</h4>
+		                  </div>
+		                </div>
+		              </div>
+		              <img src="images/kitchen.jpg" class="img-responsive" alt="Lounge"> </a> </div>
+		          </div>
+		        </div>
+		        <div class="col-sm-6 col-md-4 gear">
+		          <div class="portfolio-item">
+		            <div class="hover-bg"> <a href="images/microphonefull.jpg" title="Gear" data-lightbox-gallery="studio-gallery">
+		              <div class="hover-text">
+		                <div class="overlay-caption">
+		                  <div class="overlay-content">
+		                    <h4>Gear</h4>
+		                  </div>
+		                </div>
+		              </div>
+		              <img src="images/microphonefull.jpg" class="img-responsive" alt="Gear"> </a> </div>
+		          </div>
+		        </div>
+		        <div class="col-sm-6 col-md-4 gear">
+		          <div class="portfolio-item">
+		            <div class="hover-bg"> <a href="images/fenderamp.jpg" title="Gear" data-lightbox-gallery="studio-gallery">
+		              <div class="hover-text">
+		                <div class="overlay-caption">
+		                  <div class="overlay-content">
+		                    <h4>Gear</h4>
+		                  </div>
+		                </div>
+		              </div>
+		              <img src="images/fenderamp.jpg" class="img-responsive" alt="Gear"> </a> </div>
+		          </div>
+		        </div>
+		        <div class="col-sm-6 col-md-4 gear">
+		          <div class="portfolio-item">
+		            <div class="hover-bg"> <a href="images/vintageequip.jpg" title="Gear" data-lightbox-gallery="studio-gallery">
+		              <div class="hover-text">
+		                <div class="overlay-caption">
+		                  <div class="overlay-content">
+		                    <h4>Gear</h4>
+		                  </div>
+		                </div>
+		              </div>
+		              <img src="images/vintageequip.jpg" class="img-responsive" alt="Gear"> </a> </div>
+		          </div>
+		        </div>
+		        <div class="col-sm-6 col-md-4 isoroom">
+		          <div class="portfolio-item">
+		            <div class="hover-bg"> <a href="images/guitars.jpg" title="Iso room" data-lightbox-gallery="studio-gallery">
+		              <div class="hover-text">
+		                <div class="overlay-caption">
+		                  <div class="overlay-content">
+		                    <h4>Iso Room</h4>
+		                  </div>
+		                </div>
+		              </div>
+		              <img src="images/guitars.jpg" class="img-responsive" alt="Iso room"> </a> </div>
+		          </div>
+		        </div>
+		        <div class="col-sm-6 col-md-4 isoroom">
+		          <div class="portfolio-item">
+		            <div class="hover-bg"> <a href="images/isoroom2.jpg" title="Iso Room" data-lightbox-gallery="studio-gallery">
+		              <div class="hover-text">
+		                <div class="overlay-caption">
+		                  <div class="overlay-content">
+		                    <h4>Iso Room</h4>
+		                  </div>
+		                </div>
+		              </div>
+		              <img src="images/isoroom2.jpg" class="img-responsive" alt="Iso Room"> </a> </div>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+
+
+		</div>  <!--- site wrapper --------->
+
+
+
+
+
+		<div id="portfolio">
+		  <div class="container">
+		    <div class="categories">
+		    </div>
+
+		    <div class="row">
+		      <div class="portfolio-items isotope" style="position: relative; overflow: hidden; height: 1843px;">
+
+		        <div class="col-sm-6 col-md-4 lorem isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 267px, 0px) scale3d(1, 1, 1); opacity: 1;">
+		          <div class="portfolio-item">
+		            <div class="hover-bg"> <a href="img/portfolio/04-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+		              <div class="hover-text">
+		                <div class="overlay-caption">
+		                  <div class="overlay-content">
+		                    <h4>Project Name</h4>
+		                  </div>
+		                </div>
+		              </div>
+		              <img src="img/portfolio/04-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+		          </div>
+		        </div>
+		        <div class="col-sm-6 col-md-4 adipiscing isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(389px, 267px, 0px) scale3d(1, 1, 1); opacity: 1;">
+		          <div class="portfolio-item">
+		            <div class="hover-bg"> <a href="img/portfolio/05-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+		              <div class="hover-text">
+		                <div class="overlay-caption">
+		                  <div class="overlay-content">
+		                    <h4>Project Name</h4>
+		                  </div>
+		                </div>
+		              </div>
+		              <img src="img/portfolio/05-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+		          </div>
+		        </div>
+		        <div class="col-sm-6 col-md-4 dolor isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(778px, 267px, 0px) scale3d(1, 1, 1); opacity: 1;">
+		          <div class="portfolio-item">
+		            <div class="hover-bg"> <a href="img/portfolio/06-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+		              <div class="hover-text">
+		                <div class="overlay-caption">
+		                  <div class="overlay-content">
+		                    <h4>Project Name</h4>
+		                  </div>
+		                </div>
+		              </div>
+		              <img src="img/portfolio/06-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+		          </div>
+		        </div>
+		        <div class="col-sm-6 col-md-4 dolor isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(389px, 534px, 0px) scale3d(1, 1, 1); opacity: 1;">
+		          <div class="portfolio-item">
+		            <div class="hover-bg"> <a href="img/portfolio/07-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+		              <div class="hover-text">
+		                <div class="overlay-caption">
+		                  <div class="overlay-content">
+		                    <h4>Project Name</h4>
+		                  </div>
+		                </div>
+		              </div>
+		              <img src="img/portfolio/07-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+		          </div>
+		        </div>
+		        <div class="col-sm-6 col-md-4 lorem isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(778px, 534px, 0px) scale3d(1, 1, 1); opacity: 1;">
+		          <div class="portfolio-item">
+		            <div class="hover-bg"> <a href="img/portfolio/08-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+		              <div class="hover-text">
+		                <div class="overlay-caption">
+		                  <div class="overlay-content">
+		                    <h4>Project Name</h4>
+		                  </div>
+		                </div>
+		              </div>
+		              <img src="img/portfolio/08-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+		          </div>
+		        </div>
+		        <div class="col-sm-6 col-md-4 adipiscing isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(778px, 801px, 0px) scale3d(1, 1, 1); opacity: 1;">
+		          <div class="portfolio-item">
+		            <div class="hover-bg"> <a href="img/portfolio/09-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+		              <div class="hover-text">
+		                <div class="overlay-caption">
+		                  <div class="overlay-content">
+		                    <h4>Project Name</h4>
+		                  </div>
+		                </div>
+		              </div>
+		              <img src="img/portfolio/09-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+		          </div>
+		        </div>
+		        <div class="col-sm-6 col-md-4 adipiscing isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(389px, 832px, 0px) scale3d(1, 1, 1); opacity: 1;">
+		          <div class="portfolio-item">
+		            <div class="hover-bg"> <a href="img/portfolio/10-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+		              <div class="hover-text">
+		                <div class="overlay-caption">
+		                  <div class="overlay-content">
+		                    <h4>Project Name</h4>
+		                  </div>
+		                </div>
+		              </div>
+		              <img src="img/portfolio/10-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+		          </div>
+		        </div>
+		        <div class="col-sm-6 col-md-4 adipiscing isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 842px, 0px) scale3d(1, 1, 1); opacity: 1;">
+		          <div class="portfolio-item">
+		            <div class="hover-bg"> <a href="img/portfolio/11-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+		              <div class="hover-text">
+		                <div class="overlay-caption">
+		                  <div class="overlay-content">
+		                    <h4>Project Name</h4>
+		                  </div>
+		                </div>
+		              </div>
+		              <img src="img/portfolio/11-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+		          </div>
+		        </div>
+		        <div class="col-sm-6 col-md-4 lorem isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(778px, 1068px, 0px) scale3d(1, 1, 1); opacity: 1;">
+		          <div class="portfolio-item">
+		            <div class="hover-bg"> <a href="img/portfolio/12-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+		              <div class="hover-text">
+		                <div class="overlay-caption">
+		                  <div class="overlay-content">
+		                    <h4>Project Name</h4>
+		                  </div>
+		                </div>
+		              </div>
+		              <img src="img/portfolio/12-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+		          </div>
+		        </div>
+		        <div class="col-sm-6 col-md-4 adipiscing isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(389px, 1099px, 0px) scale3d(1, 1, 1); opacity: 1;">
+		          <div class="portfolio-item">
+		            <div class="hover-bg"> <a href="img/portfolio/13-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+		              <div class="hover-text">
+		                <div class="overlay-caption">
+		                  <div class="overlay-content">
+		                    <h4>Project Name</h4>
+		                  </div>
+		                </div>
+		              </div>
+		              <img src="img/portfolio/13-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+		          </div>
+		        </div>
+		        <div class="col-sm-6 col-md-4 dolor isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 1109px, 0px) scale3d(1, 1, 1); opacity: 1;">
+		          <div class="portfolio-item">
+		            <div class="hover-bg"> <a href="img/portfolio/14-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+		              <div class="hover-text">
+		                <div class="overlay-caption">
+		                  <div class="overlay-content">
+		                    <h4>Project Name</h4>
+		                  </div>
+		                </div>
+		              </div>
+		              <img src="img/portfolio/14-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+		          </div>
+		        </div>
+		        <div class="col-sm-6 col-md-4 dolor isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(778px, 1335px, 0px) scale3d(1, 1, 1); opacity: 1;">
+		          <div class="portfolio-item">
+		            <div class="hover-bg"> <a href="img/portfolio/15-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+		              <div class="hover-text">
+		                <div class="overlay-caption">
+		                  <div class="overlay-content">
+		                    <h4>Project Name</h4>
+		                  </div>
+		                </div>
+		              </div>
+		              <img src="img/portfolio/15-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+		          </div>
+		        </div>
+		        <div class="col-sm-6 col-md-4 lorem isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(389px, 1366px, 0px) scale3d(1, 1, 1); opacity: 1;">
+		          <div class="portfolio-item">
+		            <div class="hover-bg"> <a href="img/portfolio/16-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+		              <div class="hover-text">
+		                <div class="overlay-caption">
+		                  <div class="overlay-content">
+		                    <h4>Project Name</h4>
+		                  </div>
+		                </div>
+		              </div>
+		              <img src="img/portfolio/16-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+		          </div>
+		        </div>
+		        <div class="col-sm-6 col-md-4 adipiscing isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 1555px, 0px) scale3d(1, 1, 1); opacity: 1;">
+		          <div class="portfolio-item">
+		            <div class="hover-bg"> <a href="img/portfolio/17-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+		              <div class="hover-text">
+		                <div class="overlay-caption">
+		                  <div class="overlay-content">
+		                    <h4>Project Name</h4>
+		                  </div>
+		                </div>
+		              </div>
+		              <img src="img/portfolio/17-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+		          </div>
+		        </div>
+		        <div class="col-sm-6 col-md-4 lorem isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(778px, 1602px, 0px) scale3d(1, 1, 1); opacity: 1;">
+		          <div class="portfolio-item">
+		            <div class="hover-bg"> <a href="img/portfolio/18-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+		              <div class="hover-text">
+		                <div class="overlay-caption">
+		                  <div class="overlay-content">
+		                    <h4>Project Name</h4>
+		                  </div>
+		                </div>
+		              </div>
+		              <img src="img/portfolio/18-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
 		<!-- End Studio Area -->
-		<section id="works" class="s-works">
 
-        <div class="intro-wrap">
 
-            <div class="row section-header has-bottom-sep light-sep aos-init aos-animate" data-aos="fade-up">
-                <div class="col-full">
-                    <h3 class="subhead">Recent Works</h3>
-                    <h1 class="display-2 display-2--light">We love what we do, check out some of our latest works</h1>
-                </div>
-            </div> <!-- end section-header -->
-
-        </div> <!-- end intro-wrap -->
-
-        <div class="row works-content">
-            <div class="col-full masonry-wrap">
-                <div class="masonry" style="position: relative; height: 1820px;">
-
-                    <div class="masonry__brick aos-init aos-animate" data-aos="fade-up" style="position: absolute; left: 0px; top: 0px;">
-                        <div class="item-folio">
-
-                            <div class="item-folio__thumb">
-                                <a href="images/portfolio/gallery/g-shutterbug.jpg" class="thumb-link" title="Shutterbug" data-size="1050x700">
-                                    <img src="images/portfolio/lady-shutterbug.jpg" srcset="images/portfolio/lady-shutterbug.jpg 1x, images/portfolio/lady-shutterbug@2x.jpg 2x" alt="">
-                                </a>
-                            </div>
-
-                            <div class="item-folio__text">
-                                <h3 class="item-folio__title">
-                                    Shutterbug
-                                </h3>
-                                <p class="item-folio__cat">
-                                    Branding
-                                </p>
-                            </div>
-
-                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                                <i class="icon-link"></i>
-                            </a>
-
-                            <div class="item-folio__caption">
-                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                            </div>
-
-                        </div>
-                    </div> <!-- end masonry__brick -->
-
-                    <div class="masonry__brick aos-init aos-animate" data-aos="fade-up" style="position: absolute; left: 560px; top: 0px;">
-                        <div class="item-folio">
-
-                            <div class="item-folio__thumb">
-                                <a href="images/portfolio/gallery/g-woodcraft.jpg" class="thumb-link" title="Woodcraft" data-size="1050x700">
-                                    <img src="images/portfolio/woodcraft.jpg" srcset="images/portfolio/woodcraft.jpg 1x, images/portfolio/woodcraft@2x.jpg 2x" alt="">
-                                </a>
-                            </div>
-
-                            <div class="item-folio__text">
-                                <h3 class="item-folio__title">
-                                    Woodcraft
-                                </h3>
-                                <p class="item-folio__cat">
-                                    Web Design
-                                </p>
-                            </div>
-
-                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                                <i class="icon-link"></i>
-                            </a>
-
-                            <div class="item-folio__caption">
-                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                            </div>
-
-                        </div>
-                    </div> <!-- end masonry__brick -->
-
-                    <div class="masonry__brick aos-init aos-animate" data-aos="fade-up" style="position: absolute; left: 0px; top: 560px;">
-                        <div class="item-folio">
-
-                            <div class="item-folio__thumb">
-                                <a href="images/portfolio/gallery/g-beetle.jpg" class="thumb-link" title="The Beetle Car" data-size="1050x700">
-                                    <img src="images/portfolio/the-beetle.jpg" srcset="images/portfolio/the-beetle.jpg 1x, images/portfolio/the-beetle@2x.jpg 2x" alt="">
-                                </a>
-                            </div>
-
-                            <div class="item-folio__text">
-                                <h3 class="item-folio__title">
-                                    The Beetle
-                                </h3>
-                                <p class="item-folio__cat">
-                                    Web Development
-                                </p>
-                            </div>
-
-                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                                <i class="icon-link"></i>
-                            </a>
-
-                            <div class="item-folio__caption">
-                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                            </div>
-
-                        </div>
-                    </div> <!-- end masonry__brick -->
-
-                    <div class="masonry__brick aos-init aos-animate" data-aos="fade-up" style="position: absolute; left: 560px; top: 700px;">
-                        <div class="item-folio">
-
-                            <div class="item-folio__thumb">
-                                <a href="images/portfolio/gallery/g-grow-green.jpg" class="thumb-link" title="Grow Green" data-size="1050x700">
-                                    <img src="images/portfolio/grow-green.jpg" srcset="images/portfolio/grow-green.jpg 1x, images/portfolio/grow-green@2x.jpg 2x" alt="">
-                                </a>
-                            </div>
-
-                            <div class="item-folio__text">
-                                <h3 class="item-folio__title">
-                                    Grow Green
-                                </h3>
-                                <p class="item-folio__cat">
-                                    Branding
-                                </p>
-                            </div>
-
-                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                                <i class="icon-link"></i>
-                            </a>
-
-                            <div class="item-folio__caption">
-                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                            </div>
-
-                        </div>
-                    </div> <!-- end masonry__brick -->
-
-                    <div class="masonry__brick aos-init aos-animate" data-aos="fade-up" style="position: absolute; left: 0px; top: 1120px;">
-                        <div class="item-folio">
-
-                            <div class="item-folio__thumb">
-                                <a href="images/portfolio/gallery/g-guitarist.jpg" class="thumb-link" title="Guitarist" data-size="1050x700">
-                                    <img src="images/portfolio/guitarist.jpg" srcset="images/portfolio/guitarist.jpg 1x, images/portfolio/guitarist@2x.jpg 2x" alt="">
-                                </a>
-                            </div>
-
-                            <div class="item-folio__text">
-                                <h3 class="item-folio__title">
-                                    Guitarist
-                                </h3>
-                                <p class="item-folio__cat">
-                                    Web Design
-                                </p>
-                            </div>
-
-                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                                <i class="icon-link"></i>
-                            </a>
-
-                            <div class="item-folio__caption">
-                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                            </div>
-
-                        </div>
-                    </div> <!-- end masonry__brick -->
-
-                    <div class="masonry__brick aos-init aos-animate" data-aos="fade-up" style="position: absolute; left: 560px; top: 1260px;">
-                        <div class="item-folio">
-
-                            <div class="item-folio__thumb">
-                                <a href="images/portfolio/gallery/g-palmeira.jpg" class="thumb-link" title="Palmeira" data-size="1050x700">
-                                    <img src="images/portfolio/palmeira.jpg" srcset="images/portfolio/palmeira.jpg 1x, images/portfolio/palmeira@2x.jpg 2x" alt="">
-                                </a>
-                            </div>
-
-                            <div class="item-folio__text">
-                                <h3 class="item-folio__title">
-                                    Palmeira
-                                </h3>
-                                <p class="item-folio__cat">
-                                    Web Design
-                                </p>
-                            </div>
-
-                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                                <i class="icon-link"></i>
-                            </a>
-
-                            <div class="item-folio__caption">
-                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                            </div>
-
-                        </div>
-                    </div> <!-- end masonry__brick -->
-
-                </div> <!-- end masonry -->
-            </div> <!-- end col-full -->
-        </div> <!-- end works-content -->
-
-    </section>
 
 
 		<!-- Start Footer -->
@@ -315,30 +574,30 @@
 
 					<div class="col-sm-6">
 						<p class="footer-text">
-							<h4 class="py-1">Infinite Studios</h4>
+							<h3 class="py-1">Infinite Studios</h3>
 							3132 Marina Dr, <br />
 							Alameda, CA 94501
 						</p>
 		      </div>
 					<div class="col-sm-6">
 						<p class="pt-3">
-							<a href="info@infinitestudios.com" class="pt-3">info@infinitestudios.com</a> // (510) 521-0321
+							<a href="mailto:info@infinitestudios.com" class="pt-3">info@infinitestudios.com</a> <br /> (510) 521-0321
 						</p>
 						<ul class="contact-social pt-3">
               <li>
-                <a href="#0"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#0"><i class="fab fa-facebook fa-lg"></i></a>
               </li>
               <li>
-                <a href="#0"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="#0"><i class="fab fa-twitter fa-lg"></i></a>
               </li>
               <li>
-                <a href="#0"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#0"><i class="fab fa-instagram fa-lg"></i></a>
               </li>
           	</ul>
 		      </div>
 
 				</div>
-				<p class="pt-5 text-center ">
+				<p class="pt-5 text-center">
 					Infinite Studios © 2018 | All rights reserved
 				</p>
 			</div>
@@ -346,11 +605,31 @@
 
 	</main>
 
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="js/SmoothScroll.js"></script>
+	<script type="text/javascript" src="js/nivo-lightbox.js"></script>
+	<script type="text/javascript" src="js/jquery.isotope.js"></script>
+
+	<script src="clients.json"></script>
 	<script src="gear.json"></script>
 	<script src="js/script.js"></script>
-	</body>
+	<script src="js/main.js"></script>
+</body>
 </html>
