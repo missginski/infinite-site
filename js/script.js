@@ -16,41 +16,85 @@
 
 
   	// Portfolio isotope filter
-    $(window).load(function() {
-        var $container = $('.portfolio-items');
-        $container.isotope({
-            filter: '*',
-            animationOptions: {
-                duration: 750,
-                easing: 'linear',
-                queue: false
-            }
-        });
-        $('.cat a').click(function() {
-            $('.cat .active').removeClass('active');
-            $(this).addClass('active');
-            var selector = $(this).attr('data-filter');
-            $container.isotope({
-                filter: selector,
-                animationOptions: {
-                    duration: 750,
-                    easing: 'linear',
-                    queue: false
-                }
-            });
-            return false;
-        });
-
-    });
+    // $(window).load(function() {
+    //     var $container = $('.portfolio-items');
+    //     $container.isotope({
+    //         filter: '*',
+    //         animationOptions: {
+    //             duration: 750,
+    //             easing: 'linear',
+    //             queue: false
+    //         }
+    //     });
+    //     $('.cat a').click(function() {
+    //         $('.cat .active').removeClass('active');
+    //         $(this).addClass('active');
+    //         var selector = $(this).attr('data-filter');
+    //         $container.isotope({
+    //             filter: selector,
+    //             animationOptions: {
+    //                 duration: 750,
+    //                 easing: 'linear',
+    //                 queue: false
+    //             }
+    //         });
+    //         return false;
+    //     });
+    //
+    // });
 
 
     // Nivo Lightbox
-    $('.portfolio-item a').nivoLightbox({
-            effect: 'slideDown',
-            keyboardNav: true,
-        });
+    // $('.portfolio-item a').nivoLightbox({
+    //         effect: 'slideDown',
+    //         keyboardNav: true,
+    //     });
+
+
+		$('.carousel-item:first-child').addClass('active');
+
 
 }());
 
 
-$('.carousel-item:first-child').addClass('active');
+
+function getClients(obj) {
+  let recording = obj[0].recording;
+  let mixing = obj[1].mixing;
+  let mastering = obj[2].mastering;
+
+  appendData(recording, mixing, mastering)
+}
+
+
+getClients(clients)
+
+
+function appendData(items, items2, items3) {
+  let recList = $('.recording');
+  let mixList = $('.mixing');
+  let masList = $('.mastering');
+
+  items.forEach(function(client) {
+    let recClient = $('<li>');
+    recClient.append(client);
+    recList.append(recClient)
+    console.log(client)
+  })
+
+  items2.forEach(function(client) {
+    let mixClient = $('<li>');
+    mixClient.append(client);
+    mixList.append(mixClient)
+    console.log(client)
+  })
+
+  items3.forEach(function(client) {
+    let masClient = $('<li>');
+    masClient.append(client);
+    masList.append(masClient)
+    console.log(client)
+  })
+
+  console.log(items)
+}
