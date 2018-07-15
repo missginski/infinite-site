@@ -1,3 +1,7 @@
+body {
+	text-align: center;
+}
+
 .logo {
 	max-width: 300px;
 }
@@ -26,6 +30,20 @@
 main {
 	margin-top: 6.75rem;
 }
+
+.grid-item {
+	padding: .5rem;
+}
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.button-container {
+	margin: 4rem 0;
+}
+
 
 
 
