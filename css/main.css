@@ -14,16 +14,6 @@ body, html {
 .navbar {
 	padding: 0;
 }
-.contact-social {
-	list-style: none;
-	padding-left: .25rem;
-}
-.contact-social li {
-	display: inline-block;
-}
-.contact-card h3 {
-	text-transform: none;
-}
 .button-container {
 	margin: 4rem 0;
 }
@@ -73,6 +63,32 @@ hr {
 	padding: 0 2.5rem 2.5rem 2.5rem;
 	/*text-align: left;*/
 }
+.about {
+	font-size: 2rem;
+	text-align: left;
+}
+
+.contact-social {
+	list-style: none;
+	padding-left: .25rem;
+}
+.contact-social li {
+	display: inline-block;
+}
+.contact-card h3 {
+	/*text-transform: none;*/
+}
+.contact-card .marketing-text {
+	font-size: 2rem;
+	padding: 0;
+}
+.contact {
+	padding-bottom: 2.5rem
+}
+.content p {
+	font-size: 1.125rem;
+}
+
 
 
 
