@@ -14,10 +14,24 @@
         }
       });
 
+
       var $grid = $('.grid').isotope({
         itemSelector: '.grid-item',
         layoutMode: 'masonry'
       });
+      // filter functions
+      var filterFns = {
+        // show if number is greater than 50
+        numberGreaterThan50: function() {
+          var number = $(this).find('.number').text();
+          return parseInt( number, 10 ) > 50;
+        },
+        // show if name ends with -ium
+        ium: function() {
+          var name = $(this).find('.name').text();
+          return name.match( /ium$/ );
+        }
+      };
       // bind filter button click
       $('.filters-button-group').on( 'click', 'button', function() {
         var filterValue = $( this ).attr('data-filter');
@@ -34,50 +48,6 @@
         });
       });
 
-
-
-      // $('.my-btn').click(function() {
-      //   let value = $(this).attr('data-filter');
-      //
-      //   if (value === 'all'){
-      //     $('.filter').show('1000');
-      //   }
-      //   else {
-      //     $(".filter").not('.' + value).hide('3000');
-      //     $('.filter').filter('.' + value).show('3000');
-      //   }
-      // });
-
-
-
-
-  	// Portfolio isotope filter
-    // $(window).load(function() {
-        // var $container = $('.grid');
-        // $container.isotope({
-        //     filter: '*',
-        //     animationOptions: {
-        //         duration: 750,
-        //         easing: 'linear',
-        //         queue: false
-        //     }
-        // });
-        // $('.cat a').click(function() {
-        //     $('.cat .active').removeClass('active');
-        //     $(this).addClass('active');
-        //     var selector = $(this).attr('data-filter');
-        //     $container.isotope({
-        //         filter: selector,
-        //         animationOptions: {
-        //             duration: 750,
-        //             easing: 'linear',
-        //             queue: false
-        //         }
-        //     });
-        //     return false;
-        // });
-    //
-    // });
 
 
     // Nivo Lightbox
