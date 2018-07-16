@@ -14,13 +14,27 @@
         }
       });
 
-
-      $('.grid').isotope({
+      var $grid = $('.grid').isotope({
         itemSelector: '.grid-item',
-        masonry: {
-          // columnWidth: 100
-        }
+        layoutMode: 'masonry'
       });
+      // bind filter button click
+      $('.filters-button-group').on( 'click', 'button', function() {
+        var filterValue = $( this ).attr('data-filter');
+        // use filterFn if matches value
+        filterValue = filterFns[ filterValue ] || filterValue;
+        $grid.isotope({ filter: filterValue });
+      });
+      // change is-checked class on buttons
+      $('.button-group').each( function( i, buttonGroup ) {
+        var $buttonGroup = $( buttonGroup );
+        $buttonGroup.on( 'click', 'button', function() {
+          $buttonGroup.find('.is-checked').removeClass('is-checked');
+          $( this ).addClass('is-checked');
+        });
+      });
+
+
 
       // $('.my-btn').click(function() {
       //   let value = $(this).attr('data-filter');
@@ -39,29 +53,29 @@
 
   	// Portfolio isotope filter
     // $(window).load(function() {
-    //     var $container = $('.gallery-items');
-    //     $container.isotope({
-    //         filter: '*',
-    //         animationOptions: {
-    //             duration: 750,
-    //             easing: 'linear',
-    //             queue: false
-    //         }
-    //     });
-    //     $('.cat a').click(function() {
-    //         $('.cat .active').removeClass('active');
-    //         $(this).addClass('active');
-    //         var selector = $(this).attr('data-filter');
-    //         $container.isotope({
-    //             filter: selector,
-    //             animationOptions: {
-    //                 duration: 750,
-    //                 easing: 'linear',
-    //                 queue: false
-    //             }
-    //         });
-    //         return false;
-    //     });
+        // var $container = $('.grid');
+        // $container.isotope({
+        //     filter: '*',
+        //     animationOptions: {
+        //         duration: 750,
+        //         easing: 'linear',
+        //         queue: false
+        //     }
+        // });
+        // $('.cat a').click(function() {
+        //     $('.cat .active').removeClass('active');
+        //     $(this).addClass('active');
+        //     var selector = $(this).attr('data-filter');
+        //     $container.isotope({
+        //         filter: selector,
+        //         animationOptions: {
+        //             duration: 750,
+        //             easing: 'linear',
+        //             queue: false
+        //         }
+        //     });
+        //     return false;
+        // });
     //
     // });
 
@@ -78,6 +92,8 @@
 
 }());
 
+
+// render clients
 function getClients(obj) {
   let recording = obj[0].recording;
   let mixing = obj[1].mixing;
