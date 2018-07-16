@@ -4,9 +4,9 @@ body, html {
 	-webkit-font-smoothing: antialiased !important;
 	color: #555;
 	font-weight: 400;
+	text-align: center;
 	width: 100% !important;
 	height: 100% !important;
-	text-align: center;
 }
 .logo {
 	max-width: 300px;
@@ -46,13 +46,33 @@ main {
 }
 footer {
 	text-align: left;
+	border-top: 1px solid #555;
 }
 .footer-text {
 	font-size: 1.875rem;
 }
-
-
-
+div.content {
+	padding: 2.5rem 0;
+}
+div.content p {
+	text-align: left;
+	font-size: 1.125rem
+}
+.section-title {
+	margin: 4rem auto 1rem;
+}
+hr {
+	height: 1px;
+	position: relative;
+	background: #444;
+	margin-bottom: 2.5rem;
+	margin-top: 1.5rem;
+}
+.marketing-text {
+	font-size: 1.375rem;
+	padding: 0 2.5rem 2.5rem 2.5rem;
+	/*text-align: left;*/
+}
 
 
 
@@ -99,13 +119,6 @@ p.intro {
 	margin: 12px 0 0;
 	line-height: 24px;
 }
-a {
-	color: #222;
-}
-a:hover, a:focus {
-	text-decoration: none;
-	color: #000;
-}
 ul, ol {
 	list-style: none;
 }
@@ -114,28 +127,8 @@ ul, ol {
 	webkit-padding: 0;
 	moz-padding: 0;
 }
-/*hr {
-	height: 6px;
-	width: 70px;
-	position: relative;
-	background: #444;
-	margin-bottom: 20px;
-	margin-left: 0;
-	border: 0;
-}*/
-.btn:active, .btn.active {
-	background-image: none;
-	outline: 0;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-}
-a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
-	outline: none;
-	outline-offset: none;
-}
-.section-title {
-	margin-bottom: 50px;
-}
+
+
 .btn-custom {
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
@@ -155,18 +148,6 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	background-color: #444;
 }
 /* Header Section */
-.intro {
-	display: table;
-	width: 100%;
-	padding: 0;
-	margin-bottom: 80px;
-	background: url(../img/intro-bg.jpg) no-repeat right top;
-	background-color: #e5e5e5;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
-}
 .intro .overlay {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,d5dade+100&0.5+0,0+100 */
 	background: -moz-linear-gradient(left, rgba(255,255,255,0.5) 0%, rgba(213,218,222,0) 100%); /* FF3.6-15 */
@@ -192,7 +173,7 @@ header .intro-text {
 #portfolio {
 	padding: 40px 0 100px 0;
 }
-.categories {
+.button-group {
 	margin-bottom: 80px;
 }
 ul.cat li {
@@ -251,15 +232,7 @@ ol.type li a:hover {
 	-moz-transition-property: -moz-transform, opacity;
 	transition-property: transform, opacity;
 }
-.portfolio-item {
-	margin: 10px 0;
-	-webkit-transition: all 0.5s ease-out;
-	-moz-transition: all 0.5s ease-out;
-	-ms-transition: all 0.5s ease-out;
-	-o-transition: all 0.5s ease-out;
-	transition: all 0.5s ease-out;
-}
-.portfolio-item .hover-bg {
+.hover-bg {
 	overflow: hidden;
 	position: relative;
 }
@@ -390,6 +363,7 @@ color: #777;
 #footer {
 	background: #262626;
 	padding: 50px 0 20px 0;
+	border-top: 1px solid #666;
 }
 #footer p {
 	font-size: 15px;
