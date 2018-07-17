@@ -166,3 +166,18 @@ function appendGear(arr, arr1, arr2, arr3, arr4, arr5, arr6, arr7, arr8, arr9) {
     pluginsList.append(pluginsGear)
   })
 }
+
+if($(window).width()>769){
+        $('.navbar .dropdown').hover(function() {
+            $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
+
+        }, function() {
+            $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp();
+
+        });
+
+        $('.navbar .dropdown > a').click(function(){
+            location.href = this.href;
+        });
+
+    }
