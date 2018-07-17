@@ -4,6 +4,7 @@ body, html {
 	-webkit-font-smoothing: antialiased !important;
 	color: #555;
 	font-weight: 400;
+	margin: auto;
 	text-align: center;
 	width: 100% !important;
 	height: 100% !important;
@@ -67,7 +68,6 @@ hr {
 	font-size: 2rem;
 	text-align: left;
 }
-
 .contact-social {
 	list-style: none;
 	padding-left: .25rem;
@@ -87,6 +87,19 @@ hr {
 }
 .content p {
 	font-size: 1.125rem;
+}
+.services .row {
+	padding: 1rem 0;
+	text-align: left;
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
 }
 
 
@@ -127,7 +140,7 @@ h5 {
 }
 p {
 	font-family: 'Roboto', sans-serif;
-	font-size: 15px;
+	font-size: 1.175rem;
 	font-weight: 400;
 	color: #888;
 }

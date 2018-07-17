@@ -18,11 +18,12 @@
 </head>
 
 <body>
-<!-- Start Header Area -->
-<div class="site-wrapper">
+
+<!-- <div class="site-wrapper"> -->
 	<header id="site-header">
-		<div class="container navbar-wrapper">
+		<div class="container mx-auto">
 			<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+
 			  <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo" alt="logo" /></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainnav" aria-controls="mainnav" aria-expanded="false" aria-label="Toggle navigation">
 			    <span class="navbar-toggler-icon"></span>
@@ -30,22 +31,41 @@
 				<div class="collapse navbar-collapse" id="mainnav">
 
 			    <ul class="navbar-nav ml-auto">
-			      <li class="nav-item dropdown active">
-			        <a class="nav-link dropdown-toggle" href="#top" id="mainnav" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+
+						<li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="about.html" id="mainnav" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 			          <a class="dropdown-item" href="services.html">Services</a>
-			          <a class="dropdown-item" href="portfolio.html">The Studio</a>
+								<a class="dropdown-item" href="contact.html">Contact</a>
+			          <a class="dropdown-item" href="clients.html">Clients</a>
 			        </div>
 						</li>
-						<li class="nav-item dropdown active">
+
+						<li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="#" id="mainnav" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">The Studio</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" href="portfolio.html">Photo Gallery</a>
+								<a class="dropdown-item" href="gear.html">Gear List</a>
+			        </div>
+						</li>
+
+						<li class="nav-item">
+			        <a class="nav-link" href="#">Blog</a>
+			      </li>
+
+
+
+						<!-- <li class="nav-item dropdown active">
 							<a class="nav-link dropdown-toggle" href="#top" id="mainnav" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 								<a class="dropdown-item" href="services.html">Contact</a>
 							</div>
-						</li>
+						</li> -->
 
-
-						<li class="nav-item">
+						<!-- <li class="nav-item">
 			        <a class="nav-link" href="gear.html">Gear</a>
 			      </li>
 			      <li class="nav-item">
@@ -56,16 +76,6 @@
 			      </li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">Blog</a>
-						</li>
-
-			      <!-- <li class="nav-item">
-			        <a class="nav-link" href="#">The Studio</a>
-			      </li>
-						<li class="nav-item">
-			        <a class="nav-link" href="#">Music</a>
-			      </li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Contact</a>
 						</li> -->
 			    </ul>
 			  </div>
@@ -104,16 +114,16 @@
 		<!-- End Banner Area -->
 		<!-- Start Services Area -->
 		<h2 class="section-title text-center mt-5">Services</h2>
-		<hr class="mb-4 w-50 mx-auto" />
+		<hr class="w-50 mx-auto" />
 		<div class="row">
       <div class="col-sm-4">
-				<a href="/services"><img src="images/mixingsq.png" class="w-100" /></a>
+				<a href="services.html"><img src="images/mixingsq.png" class="w-100" /></a>
       </div>
       <div class="col-sm-4">
-				<a href="/services"><img src="images/masteringsq.png" class="w-100" /></a>
+				<a href="services.html"><img src="images/masteringsq.png" class="w-100" /></a>
       </div>
       <div class="col-sm-4">
-				<a href="/services"><img src="images/sessionssq.png" class="w-100" /></a>
+				<a href="services.html"><img src="images/sessionssq.png" class="w-100" /></a>
       </div>
     </div>
 		<!-- End Services Area -->
@@ -123,21 +133,8 @@
 		  <div class="container">
 		    <div class="section-title">
 					<h2 class="section-title text-center pt-5 mt-5">The Studio</h2>
-					<hr class="mb-4 w-50 mx-auto" />
+					<hr class="w-50 mx-auto" />
 		    </div>
-		    <!-- <div class="categories">
-		      <ul class="cat">
-		        <li>
-		          <ol class="type">
-		            <li><a data-filter="*" class="active my-btn">All</a></li>
-		            <li><a data-filter="lounge" class="btn btn-custom my-btn" >Lounge</a></li>
-		            <li><a data-filter="controlroom" class="btn btn-custom my-btn" >Control Room</a></li>
-		            <li><a href="#" data-filter="isoroom" class="my-btn">Iso Room</a></li>
-								<li><a href="#" data-filter="gear" class="btn btn-custom my-btn">Gear</a></li>
-		          </ol>
-		        </li>
-		      </ul>
-		    </div> -->
 
 				<div class="button-group filters-button-group">
 					<button type="button" class="btn btn-custom my-btn is-checked" data-filter="*">All</button>
@@ -145,9 +142,7 @@
 					<button type="button" class="btn btn-custom my-btn"  data-filter=".controlroom">Control Room</button>
 					<button type="button" class="btn btn-custom my-btn" data-filter=".isoroom">Iso Room</button>
 					<button type="button" class="btn btn-custom my-btn" data-filter=".gear">Gear</button>
-
 				</div>
-
 
 				<div class="row grid">
 					<div class="col-sm-6 col-md-4 grid-item controlroom">
@@ -347,14 +342,11 @@
 	</div>  <!--- site wrapper --------->
 	<!-- End Studio Area -->
 
-
-
-
 		<!-- Start Footer -->
 		<footer>
 			<div class="container pt-2 my-2">
 				<div class="row footer-text">
-					<div class="col-sm-6">
+					<div class="col-12 col-lg-6">
 						<p class="footer-text">
 							<h3 class="h2 py-1">Infinite Studios</h3>
 
@@ -362,23 +354,16 @@
 								<div class="col-sm-2 text-center pt-3 px-0">
 									<i class="fas fa-map-marker-alt fa-lg"></i>
 								</div>
-
 								<div class="col-sm-8 pl-0">
 									<p class="footer-text icon-text">
 										3132 Marina Dr, <br>
 										Alameda, CA 94501
 									</p>
 								</div>
-
 							</div>
-
-
-
-
-
 						</p>
 					</div>
-					<div class="col-sm-6">
+					<div class="col-12 col-lg-6">
 						<p class="pt-3 footer-text">
 							<i class="fas fa-envelope fa-md pr-4"></i>
 							<a href="mailto:info@infinitestudios.com" class="pt-1">info@infinitestudios.com</a>

@@ -14,18 +14,17 @@
         }
       });
 
+      // Isotope layout and filters
       let $grid = $('.grid').isotope({
         itemSelector: '.grid-item',
         layoutMode: 'masonry'
       });
       let filterFns = {};
-      // bind filter button click
       $('.filters-button-group').on( 'click', 'button', function() {
         let filterValue = $( this ).attr('data-filter');
         filterValue = filterFns[ filterValue ] || filterValue;
         $grid.isotope({ filter: filterValue });
       });
-      // change is-checked class on buttons
       $('.button-group').each( function( i, buttonGroup ) {
         let $buttonGroup = $( buttonGroup );
         $buttonGroup.on( 'click', 'button', function() {
@@ -49,7 +48,7 @@
 }());
 
 
-// render clients
+// render clients section
 function getClients(obj) {
   let recording = obj[0].recording;
   let mixing = obj[1].mixing;
@@ -77,5 +76,93 @@ function appendData(items, items2, items3) {
     let masClient = $('<li>');
     masClient.append(client);
     masList.append(masClient)
+  })
+}
+
+
+
+
+
+
+
+// render gear section
+function getThisGear(obj) {
+  let mixSum = obj[0].mixersSumming;
+  let monitoring = obj[1].monitoring;
+  let conversion = obj[2].conversion;
+  let microphones = obj[3].microphones;
+  let preamps = obj[4].preamps;
+  let diBoxes = obj[5].direct_boxes;
+  let tbp = obj[6].tbp;
+  let eq = obj[7].eq;
+  let fx = obj[8].fx;
+  let plugins = obj[9].plugins;
+
+  console.log(obj)
+  appendGear(mixSum, monitoring, conversion, microphones, preamps, diBoxes, tbp, eq, fx, plugins)
+}
+getThisGear(gear)
+
+function appendGear(arr, arr1, arr2, arr3, arr4, arr5, arr6, arr7, arr8, arr9) {
+  let mixSumList = $('.mix-sum');
+  let monList = $('.monitoring');
+  let conversionList = $('.conversion');
+  let micList = $('.microphones');
+  let preampsList = $('.preamps');
+  let diBoxesList = $('.direct-boxes');
+  let tbpList = $('.tbp');
+  let eqList = $('.eq');
+  let fxList = $('.fx');
+  let pluginsList = $('.plugins')
+
+  arr.forEach(function(gear) {
+    let mixSumGear = $('<li>');
+    mixSumGear.append(gear);
+    mixSumList.append(mixSumGear)
+  })
+  arr1.forEach(function(gear) {
+    let monGear = $('<li>');
+    monGear.append(gear);
+    monList.append(monGear)
+  })
+  arr2.forEach(function(gear) {
+    let conversionGear = $('<li>');
+    conversionGear.append(gear);
+    conversionList.append(conversionGear)
+  })
+  arr3.forEach(function(gear) {
+    let mic = $('<li>');
+    mic.append(gear);
+    micList.append(mic)
+  })
+  arr4.forEach(function(gear) {
+    let preampsGear = $('<li>');
+    preampsGear.append(gear);
+    preampsList.append(preampsGear)
+  })
+  arr5.forEach(function(gear) {
+    let diGear = $('<li>');
+    diGear.append(gear);
+    diBoxesList.append(diGear)
+  })
+  arr6.forEach(function(gear) {
+    let tbpGear = $('<li>');
+    tbpGear.append(gear);
+    tbpList.append(tbpGear)
+  })
+  arr7.forEach(function(gear) {
+    let eqGear = $('<li>');
+    eqGear.append(gear);
+    eqList.append(eqGear)
+  })
+  arr8.forEach(function(gear) {
+    let fxGear = $('<li>');
+    fxGear.append(gear);
+    fxList.append(fxGear)
+  })
+  arr9.forEach(function(gear) {
+    let pluginsGear = $('<li>');
+    pluginsGear.append(gear);
+    pluginsList.append(pluginsGear)
   })
 }
