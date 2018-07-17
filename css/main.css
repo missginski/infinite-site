@@ -37,7 +37,7 @@ main {
 }
 footer {
 	text-align: left;
-	border-top: 1px solid #555;
+	border-top: 1px solid #ddd;
 }
 .footer-text {
 	font-size: 1.875rem;
@@ -99,10 +99,6 @@ hr {
   pointer-events: none;
 }
 
-
-
-
-
 .dropdown-hover::after {
   display: inline-block;
   width: 0;
@@ -116,100 +112,7 @@ hr {
   border-left: 0.3em solid transparent;
 }
 
-.dropdown-toggle:empty::after {
-  margin-left: 0;
-}
 
-
-.dropup .dropdown-toggle::after {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-left: 0.255em;
-  vertical-align: 0.255em;
-  content: "";
-  border-top: 0;
-  border-right: 0.3em solid transparent;
-  border-bottom: 0.3em solid;
-  border-left: 0.3em solid transparent;
-}
-
-.dropup .dropdown-toggle:empty::after {
-  margin-left: 0;
-}
-
-
-
-.dropright .dropdown-toggle::after {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-left: 0.255em;
-  vertical-align: 0.255em;
-  content: "";
-  border-top: 0.3em solid transparent;
-  border-right: 0;
-  border-bottom: 0.3em solid transparent;
-  border-left: 0.3em solid;
-}
-
-.dropright .dropdown-toggle:empty::after {
-  margin-left: 0;
-}
-
-.dropright .dropdown-toggle::after {
-  vertical-align: 0;
-}
-
-
-.dropleft .dropdown-toggle::after {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-left: 0.255em;
-  vertical-align: 0.255em;
-  content: "";
-}
-
-.dropleft .dropdown-toggle::after {
-  display: none;
-}
-
-.dropleft .dropdown-toggle::before {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-right: 0.255em;
-  vertical-align: 0.255em;
-  content: "";
-  border-top: 0.3em solid transparent;
-  border-right: 0.3em solid;
-  border-bottom: 0.3em solid transparent;
-}
-
-.dropleft .dropdown-toggle:empty::after {
-  margin-left: 0;
-}
-
-.dropleft .dropdown-toggle::before {
-  vertical-align: 0;
-}
-
-
-.dropdown-header {
-  display: block;
-  padding: 0.5rem 1.5rem;
-  margin-bottom: 0;
-  font-size: 0.765625rem;
-  color: #919aa1;
-  white-space: nowrap;
-}
-
-.dropdown-item-text {
-  display: block;
-  padding: 0.25rem 1.5rem;
-  color: #1a1a1a;
-}
 
 
 
