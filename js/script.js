@@ -1,24 +1,47 @@
 (function () {
    'use strict';
 
-  	$('a.page-scroll').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top
-            }, 900);
-            return false;
-          }
-        }
-      });
+  	// $('a.page-scroll').click(function() {
+    //     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+    //       var target = $(this.hash);
+    //       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    //       if (target.length) {
+    //         $('html,body').animate({
+    //           scrollTop: target.offset().top
+    //         }, 900);
+    //         return false;
+    //       }
+    //     }
+    //   });
+    // Nivo Lightbox
+    // $('.grid-item a').nivoLightbox({
+    //         effect: 'slideDown',
+    //         keyboardNav: true,
+    //     });
+
+
+    // init Isotope
+    let $grid = $('.grid').isotope({
+      itemSelector: '.grid-item',
+      layoutMode: 'masonry'
+      // masonry: {
+      //   columnWidth: '.grid-sizer'
+      // }
+    });
+    // layout Isotope after each image loads
+    $grid.imagesLoaded().progress( function() {
+      $grid.isotope('layout');
+    });
+
+
+
+
 
       // Isotope layout and filters
-      let $grid = $('.grid').isotope({
-        itemSelector: '.grid-item',
-        layoutMode: 'masonry'
-      });
+      // let $grid = $('.grid').isotope({
+      //   itemSelector: '.grid-item',
+      //   layoutMode: 'masonry'
+      // });
       let filterFns = {};
       $('.filters-button-group').on( 'click', 'button', function() {
         let filterValue = $( this ).attr('data-filter');
@@ -35,11 +58,6 @@
 
 
 
-    // Nivo Lightbox
-    // $('.grid-item a').nivoLightbox({
-    //         effect: 'slideDown',
-    //         keyboardNav: true,
-    //     });
 
 
 		$('.carousel-item:first-child').addClass('active');

@@ -1,5 +1,6 @@
 body, html {
 	font-family: 'Montserrat', sans-serif;
+	/*font-size: 1.125rem;*/
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	color: #555;
@@ -8,6 +9,55 @@ body, html {
 	text-align: center;
 	width: 100% !important;
 	height: 100% !important;
+}
+h1 {
+	color: #333;
+	font-size: 64px;
+	font-weight: 800;
+	margin-top: 0;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+h2 {
+	margin: 0 0 20px 0;
+	font-weight: 700;
+	font-size: 42px;
+	color: #333;
+	text-transform: uppercase;
+}
+h3 {
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+h4 {
+	font-size: 14px;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+h5 {
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 20px;
+}
+p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.175rem;
+	font-weight: 400;
+	color: #888;
+}
+p.intro {
+	margin: 12px 0 0;
+	line-height: 24px;
+}
+ul, ol {
+	list-style: none;
+}
+ul, ol {
+	padding: 0;
+	webkit-padding: 0;
+	moz-padding: 0;
 }
 .logo {
 	max-width: 300px;
@@ -127,55 +177,7 @@ hr {
 
 
 
-h1 {
-	color: #333;
-	font-size: 64px;
-	font-weight: 800;
-	margin-top: 0;
-	text-transform: uppercase;
-	margin-bottom: 10px;
-}
-h2 {
-	margin: 0 0 20px 0;
-	font-weight: 700;
-	font-size: 42px;
-	color: #333;
-	text-transform: uppercase;
-}
-h3 {
-	font-size: 18px;
-	text-transform: uppercase;
-	margin-bottom: 20px;
-}
-h4 {
-	font-size: 14px;
-	letter-spacing: 1px;
-	margin-bottom: 20px;
-	text-transform: uppercase;
-}
-h5 {
-	text-transform: uppercase;
-	font-weight: 700;
-	line-height: 20px;
-}
-p {
-	font-family: 'Roboto', sans-serif;
-	font-size: 1.175rem;
-	font-weight: 400;
-	color: #888;
-}
-p.intro {
-	margin: 12px 0 0;
-	line-height: 24px;
-}
-ul, ol {
-	list-style: none;
-}
-ul, ol {
-	padding: 0;
-	webkit-padding: 0;
-	moz-padding: 0;
-}
+
 
 
 .btn-custom {
