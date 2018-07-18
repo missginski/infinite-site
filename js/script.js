@@ -24,40 +24,25 @@
     let $grid = $('.grid').isotope({
       itemSelector: '.grid-item',
       layoutMode: 'masonry'
-      // masonry: {
-      //   columnWidth: '.grid-sizer'
-      // }
     });
     // layout Isotope after each image loads
     $grid.imagesLoaded().progress( function() {
       $grid.isotope('layout');
     });
-
-
-
-
-
-      // Isotope layout and filters
-      // let $grid = $('.grid').isotope({
-      //   itemSelector: '.grid-item',
-      //   layoutMode: 'masonry'
-      // });
-      let filterFns = {};
-      $('.filters-button-group').on( 'click', 'button', function() {
-        let filterValue = $( this ).attr('data-filter');
-        filterValue = filterFns[ filterValue ] || filterValue;
-        $grid.isotope({ filter: filterValue });
+    // Isotope layout and filters
+    let filterFns = {};
+    $('.filters-button-group').on( 'click', 'button', function() {
+      let filterValue = $( this ).attr('data-filter');
+      filterValue = filterFns[ filterValue ] || filterValue;
+      $grid.isotope({ filter: filterValue });
+    });
+    $('.button-group').each( function( i, buttonGroup ) {
+      let $buttonGroup = $( buttonGroup );
+      $buttonGroup.on( 'click', 'button', function() {
+        $buttonGroup.find('.is-checked').removeClass('is-checked');
+        $( this ).addClass('is-checked');
       });
-      $('.button-group').each( function( i, buttonGroup ) {
-        let $buttonGroup = $( buttonGroup );
-        $buttonGroup.on( 'click', 'button', function() {
-          $buttonGroup.find('.is-checked').removeClass('is-checked');
-          $( this ).addClass('is-checked');
-        });
-      });
-
-
-
+    });
 
 
 		$('.carousel-item:first-child').addClass('active');
@@ -96,11 +81,6 @@ function appendData(items, items2, items3) {
     masList.append(masClient)
   })
 }
-
-
-
-
-
 
 
 // render gear section
@@ -186,16 +166,12 @@ function appendGear(arr, arr1, arr2, arr3, arr4, arr5, arr6, arr7, arr8, arr9) {
 }
 
 if($(window).width()>769){
-        $('.navbar .dropdown').hover(function() {
-            $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
-
-        }, function() {
-            $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp();
-
-        });
-
-        $('.navbar .dropdown > a').click(function(){
-            location.href = this.href;
-        });
-
-    }
+  $('.navbar .dropdown').hover(function() {
+      $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
+  }, function() {
+      $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp();
+  });
+  $('.navbar .dropdown > a').click(function(){
+      location.href = this.href;
+  });
+}
