@@ -48,7 +48,50 @@
 		$('.carousel-item:first-child').addClass('active');
 
 
+//     $('#retrieve-resources').click(function () {
+//       var displayResources = $('#display-resources');
+//       displayResources.text('Loading data from JSON source...');
+//
+//       $.ajax({
+//        type: "GET",
+//        url: "resources.json",
+//        success: function(result)
+//       {
+//
+//       console.log(result);
+//       var output="<table><thead><tr><th>Name</th><th>Provider</th><th>URL</th></thead><tbody>";
+//       for (var i in result) {
+//        output+="<tr><td>" + result[i].name + "</td><td>" + result[i].provider + "</td><td>" + result[i].url + "</td></tr>";
+//       }
+//
+//       output+="</tbody></table>";
+//       displayResources.html(output);
+//        $("table").addClass("table");
+//       }
+//     });
+//   });
+// });
+
+
+
+
+
 }());
+
+
+
+// render clients refactor
+// function getAllClients(obj) {
+//   // let myObj = {};
+//   let myArr;
+//   myObj.forEach(function(val) {
+//     myArr = val[i]
+//
+//   })
+//
+//   appendData(recording, mixing, mastering)
+// }
+// getClients(clients)
 
 
 // render clients section

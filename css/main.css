@@ -161,21 +161,16 @@ hr {
   border-bottom: 0;
   border-left: 0.3em solid transparent;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.contact {
+	padding: 2rem;
+}
+.menu-scroll {
+	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+.blog-content  {
+	text-align: left;
+	margin-top: 5rem;
+}
 
 
 
@@ -411,12 +406,3 @@ color: #777;
 	color: #999;
 }*/
 /* Footer Section*/
-#footer {
-	background: #262626;
-	padding: 50px 0 20px 0;
-	border-top: 1px solid #666;
-}
-#footer p {
-	font-size: 15px;
-	color: #666;
-}
