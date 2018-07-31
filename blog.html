@@ -1,400 +1,63 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>Infinite Studios</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+---
+layout: default
+title: Infinite Blog
+---
+<div class="container">
+	<h2 class="pt-5">{{ page.title }}</h2>
+	<div class="row" id="all-posts">
+		<div class="col-md-8">
 
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto" rel="stylesheet">	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-	<link rel="stylesheet" href="css/bootstrap_lux.css" type="text/css" />
-	<link rel="stylesheet" href="css/style.css" type="text/css" />
-	<link rel="stylesheet" href="css/main.css" type="text/css" />
-	<!-- <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
-	<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css"> -->
-</head>
-
-<body>
-	<header id="site-header">
-		<!-- <div class="container mx-auto"> -->
-			<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top menu-scroll">
-				<div class="container mx-auto">
-			  <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo" alt="logo" /></a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainnav" aria-controls="mainnav" aria-expanded="false" aria-label="Toggle navigation">
-			    <span class="navbar-toggler-icon"></span>
-			  </button>
-				<div class="collapse navbar-collapse" id="mainnav">
-			    <ul class="navbar-nav ml-auto">
-						<li class="nav-item">
-							<a class="nav-link" href="index.html">Home</a>
-						</li>
-						<li class="nav-item dropdown">
-			        <a class="nav-link dropdown-hover" href="info.html" id="mainnav" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="clients.html">Clients</a>
-			          <a class="dropdown-item" href="services.html">Services</a>
-								<a class="dropdown-item" href="contact.html">Contact</a>
-			        </div>
-						</li>
-						<li class="nav-item dropdown">
-			        <a class="nav-link dropdown-hover" href="studio.html" id="mainnav" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">The Studio</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-			          <a class="dropdown-item" href="portfolio.html">Studio Photos</a>
-								<a class="dropdown-item" href="gear.html">Gear List</a>
-			        </div>
-						</li>
-						<li class="nav-item active">
-			        <a class="nav-link" href="blog.html">Blog</a>
-			      </li>
-			    </ul>
-			  </div>
-			</div>	<!--- container --------->
-		</nav>
-	</header>
-	<!-- End Header Area -->
-	<!-- Start Banner Area -->
-	<main role="main">
-	<div class="container">
-			<!-- row -->
-			<div class="row">
-				<div class="col-md-8">
-
-					<!-- post content -->
-					<div class="section-row blog-content">
-						<h3>Ea vix periculis sententiae, ea blandit pericula abhorreant pri.</h3>
-						<p>Euismod suavitate duo eu, habemus rationibus neglegentur ei qui. Debet omittam ad usu, ex vero feugait oporteat eos, id usu sint numquam sententiae.</p>
-						<figure>
-							<!-- <img src="./img/media-2.jpg" alt=""> -->
-						</figure>
-						<h3>Sit nulla quidam et, eam ea legimus deserunt neglegentur.</h3>
-						<p>Wisi veri noster eu est, diam ridens eum in. Omnium imperdiet patrioque quo in, est sumo persecuti abhorreant ei. Sed feugiat iracundia id, inermis percipit eu has.</p>
-					</div>
-					<!-- /post content -->
-
-					<div class="section-row blog-content">
-						<h3>Ea vix periculis sententiae, ea blandit pericula abhorreant pri.</h3>
-						<p>Debet omittam ad usu, ex vero feugait oporteat eos, id usu sint numquam sententiae.</p>
-						<figure>
-							<!-- <img src="./img/media-2.jpg" alt=""> -->
-						</figure>
-						<h3>Sit nulla quidam et, eam ea legimus deserunt neglegentur.</h3>
-						<p>Diam ridens eum in. Omnium imperdiet patrioque quo in, est sumo persecuti abhorreant ei. Sed feugiat iracundia id, inermis percipit eu has.</p>
-					</div>
-					<!-- /post content -->
-
-					<!-- /related post -->
-					<div>
-						<div class="section-title">
-							<h3 class="title">Related Posts</h3>
-						</div>
-						<div class="row">
-							<!-- post -->
-							<div class="col-md-4">
-								<div class="post post-sm">
-									<!-- <a class="post-img" href="blog-post.html"><img src="./img/post-4.jpg" alt=""></a> -->
-									<div class="post-body">
-										<div class="post-category">
-											<a href="category.html">Health</a>
-										</div>
-										<h3 class="post-title title-sm"><a href="blog-post.html">Postea senserit id eos, vivendo periculis ei qui</a></h3>
-										<ul class="post-meta">
-											<li><a href="author.html">John Doe</a></li>
-											<li>20 April 2018</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<!-- /post -->
-
-							<!-- post meta -->
-							<div class="post-meta">
-							  <h6>By <a href="#">Lore Papp,</a>
-									<a href="#">October 22, 2017,</a>
-									<a href="#">Uncategorized,</a>
-									<a href="#">3 Comments</a>
-								</h6>
-							</div>
-							<!-- /post meta -->
-
-							<!-- post -->
-							<div class="col-md-4">
-								<div class="post post-sm">
-									<!-- <a class="post-img" href="blog-post.html"><img src="./img/post-6.jpg" alt=""></a> -->
-									<div class="post-body">
-										<div class="post-category">
-											<a href="category.html">Fashion</a>
-											<a href="category.html">Lifestyle</a>
-										</div>
-										<h3 class="post-title title-sm"><a href="blog-post.html">Mel ut impetus suscipit tincidunt. Cum id ullum laboramus persequeris.</a></h3>
-										<ul class="post-meta">
-											<li><a href="author.html">John Doe</a></li>
-											<li>20 April 2018</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<!-- /post -->
-
-							<!-- post -->
-							<div class="col-md-4">
-								<div class="post post-sm">
-									<!-- <a class="post-img" href="blog-post.html"><img src="./img/post-7.jpg" alt=""></a> -->
-									<div class="post-body">
-										<div class="post-category">
-											<a href="category.html">Health</a>
-											<a href="category.html">Lifestyle</a>
-										</div>
-										<h3 class="post-title title-sm"><a href="blog-post.html">Ne bonorum praesent cum, labitur persequeris definitionem quo cu?</a></h3>
-										<ul class="post-meta">
-											<li><a href="author.html">John Doe</a></li>
-											<li>20 April 2018</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<!-- /post -->
-						</div>
-					</div>
-					<!-- /related post -->
-
-					<!-- post reply -->
-					<div class="section-row">
-
-					</div>
-					<!-- /post reply -->
+			{% for post in site.posts %}
+			<div class="section-row blog-content">
+				<a href="{{ post.url}}">
+					<h3 class="h2">{{ post.title }}</h3>
+				</a>
+				<figure>
+					{{ post.embed }}
+				</figure>
+				<div class="post-meta">
+					<h6 class="h5">{{ post.date | date: '%B %d' }}
+						<!-- {% for post in site.categories[post.category] %}
+					    <a href="{{ post.url | absolute_url }}">
+					      {{ post.categories }}
+					    </a>
+						{% endfor %} -->
+						<!-- <a href="#">{{ post.categories }}</a> -->
+					</h6>
 				</div>
-				<div class="col-md-4">
-					<!-- ad widget -->
-					<div class="aside-widget text-center">
-						<a href="#" style="display: inline-block;margin: auto;">
-							<!-- <img class="img-responsive" src="./img/ad-3.jpg" alt=""> -->
-						</a>
-					</div>
-					<!-- /ad widget -->
-
-					<!-- social widget -->
-					<!-- <div class="aside-widget">
-						<div class="section-title">
-							<h2 class="title">Social Media</h2>
-						</div>
-						<div class="social-widget">
-							<ul>
-								<li>
-									<a href="#" class="social-facebook">
-										<i class="fa fa-facebook"></i>
-										<span>21.2K<br>Followers</span>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="social-twitter">
-										<i class="fa fa-twitter"></i>
-										<span>10.2K<br>Followers</span>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="social-google-plus">
-										<i class="fa fa-google-plus"></i>
-										<span>5K<br>Followers</span>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div> -->
-					<!-- /social widget -->
-
-					<!-- category widget -->
-					<!-- <div class="aside-widget">
-						<div class="section-title">
-							<h2 class="title">Categories</h2>
-						</div>
-						<div class="category-widget">
-							<ul>
-								<li><a href="#">Lifestyle <span>451</span></a></li>
-								<li><a href="#">Fashion <span>230</span></a></li>
-								<li><a href="#">Technology <span>40</span></a></li>
-								<li><a href="#">Travel <span>38</span></a></li>
-								<li><a href="#">Health <span>24</span></a></li>
-							</ul>
-						</div>
-					</div> -->
-					<!-- /category widget -->
-
-					<!-- newsletter widget -->
-					<!-- <div class="aside-widget">
-						<div class="section-title">
-							<h2 class="title">Newsletter</h2>
-						</div>
-						<div class="newsletter-widget">
-							<form>
-								<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium.</p>
-								<input class="input" placeholder="Enter Your Email">
-								<button class="primary-button">Subscribe</button>
-							</form>
-						</div>
-					</div> -->
-					<!-- /newsletter widget -->
-
-					<!-- post widget -->
-					<div class="aside-widget">
-						<div class="section-title">
-							<h2 class="title">Popular Posts</h2>
-						</div>
-						<!-- post -->
-						<div class="post post-widget">
-							<!-- <a class="post-img" href="blog-post.html"><img src="./img/widget-3.jpg" alt=""></a> -->
-							<div class="post-body">
-								<div class="post-category">
-									<a href="category.html">Lifestyle</a>
-								</div>
-								<h3 class="post-title"><a href="blog-post.html">Ne bonorum praesent cum, labitur persequeris definitionem quo cu?</a></h3>
-							</div>
-						</div>
-						<!-- /post -->
-
-						<!-- post -->
-						<div class="post post-widget">
-							<!-- <a class="post-img" href="blog-post.html"><img src="./img/widget-2.jpg" alt=""></a> -->
-							<div class="post-body">
-								<div class="post-category">
-									<a href="category.html">Technology</a>
-									<a href="category.html">Lifestyle</a>
-								</div>
-								<h3 class="post-title"><a href="blog-post.html">Mel ut impetus suscipit tincidunt. Cum id ullum laboramus persequeris.</a></h3>
-							</div>
-						</div>
-						<!-- /post -->
-
-						<!-- post -->
-						<div class="post post-widget">
-							<!-- <a class="post-img" href="blog-post.html"><img src="./img/widget-4.jpg" alt=""></a> -->
-							<div class="post-body">
-								<div class="post-category">
-									<a href="category.html">Health</a>
-								</div>
-								<h3 class="post-title"><a href="blog-post.html">Postea senserit id eos, vivendo periculis ei qui</a></h3>
-							</div>
-						</div>
-						<!-- /post -->
-
-						<!-- post -->
-						<div class="post post-widget">
-							<!-- <a class="post-img" href="blog-post.html"><img src="./img/widget-5.jpg" alt=""></a> -->
-							<div class="post-body">
-								<div class="post-category">
-									<a href="category.html">Health</a>
-									<a href="category.html">Lifestyle</a>
-								</div>
-								<h3 class="post-title"><a href="blog-post.html">Sed ut perspiciatis, unde omnis iste natus error sit</a></h3>
-							</div>
-						</div>
-						<!-- /post -->
-					</div>
-					<!-- /post widget -->
-
-					<!-- galery widget -->
-					<div class="aside-widget">
-						<div class="section-title">
-							<h2 class="title">Instagram</h2>
-						</div>
-						<div class="galery-widget">
-							<ul>
-								<!-- <li><a href="#"><img src="./img/galery-1.jpg" alt=""></a></li>
-								<li><a href="#"><img src="./img/galery-2.jpg" alt=""></a></li>
-								<li><a href="#"><img src="./img/galery-3.jpg" alt=""></a></li>
-								<li><a href="#"><img src="./img/galery-4.jpg" alt=""></a></li>
-								<li><a href="#"><img src="./img/galery-5.jpg" alt=""></a></li>
-								<li><a href="#"><img src="./img/galery-6.jpg" alt=""></a></li> -->
-							</ul>
-						</div>
-					</div>
-					<!-- /galery widget -->
-
-					<!-- Ad widget -->
-					<!-- <div class="aside-widget text-center">
-						<a href="#" style="display: inline-block;margin: auto;">
-							<img class="img-responsive" src="./img/ad-1.jpg" alt="">
-						</a>
-					</div> -->
-					<!-- /Ad widget -->
-				</div>
+				<p>{{ post.excerpt }}
+					<!-- “As the title (which is repeated almost 10 times in the chorus) suggests, "Wake & Bake" is a catchy track that guarantees you'll only have one thing on your mind while listening to it. Buddz told Billboard that he initially had the song in mind for a different artist, and you may not be surprised at who it was.” – Billboard. -->
+				</p>
 			</div>
-			<!-- /row -->
+			{% endfor %}
 		</div>
-	</main>
-	<!-- End blog Area -->
 
-
-
-
-
-
-
-
-
-
-
-	<!-- Start Footer -->
-	<footer>
-		<div class="container pt-2 my-2">
-			<div class="row footer-text">
-				<div class="col-12 col-lg-6">
-					<p class="footer-text">
-						<h3 class="h2 pt-3 py-1">Infinite Studios</h3>
-						<div class="row">
-							<div class="col-sm-1 text-center pt-2 mt-2 pl-4">
-								<i class="fas fa-map-marker-alt fa-lg"></i>
-							</div>
-							<div class="col-sm-10 ml-2 pl-4">
-								<p class="footer-text icon-text">
-									3132 Marina Dr, <br>
-									Alameda, CA 94501
-								</p>
-							</div>
-						</div>
-					</p>
+		<div class="col-md-4">
+			<div class="aside-widget">
+				<div class="section-title">
+					<h2 class="title">tracks</h2>
 				</div>
-				<div class="col-12 col-lg-6">
-					<p class="pt-3 footer-text">
-						<i class="fas fa-envelope fa-xs pl-1 pr-3"></i>
-						<a href="mailto:info@infinitestudios.com" class="py-">info@infinitestudios.com</a>
-						<br />
-						<i class="fas fa-phone fa-xs pl-1 pr-3"></i>
-						 (510) 521-0321
-					</p>
-					<ul class="contact-social pt-1">
-						<li class="pr-4">
-							<a href="#0"><i class="fab fa-facebook fa-lg"></i></a>
-						</li>
-						<li class="pr-4">
-							<a href="#0"><i class="fab fa-twitter fa-lg"></i></a>
-						</li>
-						<li class="pr-4">
-							<a href="#0"><i class="fab fa-instagram fa-lg"></i></a>
-						</li>
+				<figure>
+					<iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/152910081/favorites&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+				</figure>
+			</div>
+			<!-- galery widget -->
+			<div class="aside-widget">
+				<div class="section-title">
+					<h2 class="title">Instagram</h2>
+				</div>
+				<div class="galery-widget">
+					<ul>
+						<li><a href="#"><img src="" alt=""></a></li>
+						<li><a href="#"><img src="" alt=""></a></li>
+						<li><a href="#"><img src="" alt=""></a></li>
+						<li><a href="#"><img src="" alt=""></a></li>
+						<li><a href="#"><img src="" alt=""></a></li>
+						<li><a href="#"><img src="" alt=""></a></li>
 					</ul>
 				</div>
 			</div>
-			<p class="pt-5 text-center">
-				Infinite Studios © 2018 | All rights reserved
-			</p>
-		</div>
-	</footer>
-
-
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-
-	<!-- <script type="text/javascript" src="js/SmoothScroll.js"></script> -->
-	<!-- <script type="text/javascript" src="js/nivo-lightbox.js"></script> -->
-	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
-	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
-
-	<script src="blog-data.json"></script>
-	<script src="data.json"></script>
-	<script src="js/script.js"></script>
-</body>
-</html>
+			<!-- /galery widget -->
+		</div>	<!-- /col -->
+	</div>	<!-- /row -->
+</div>	<!-- /container -->
