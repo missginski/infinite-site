@@ -1,6 +1,9 @@
+@font-face {
+  font-family: 'BebasNeue';
+  src:  url('../fonts/bebas/BebasNeue-Regular.ttf?6iuir') format('truetype');
+}
 body, html {
 	font-family: 'Montserrat', sans-serif;
-	/*font-size: 1.125rem;*/
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	color: #555;
@@ -59,14 +62,27 @@ ul, ol {
 	webkit-padding: 0;
 	moz-padding: 0;
 }
+.logo-wrapper {
+  display:  block;
+  position:  relative;
+}
 .logo {
-	max-width: 300px;
+	max-width: 75px;
+}
+h1.logo-dark {
+	font-family: BebasNeue;
+	font-size: 2.5rem;
+	padding: 0 1rem;
+	font-style: italic;
+	font-weight: lighter;
+	position: absolute;
+	display: inline;
+	color: white;
+	margin-top: .125rem;
 }
 .navbar {
-	padding: 0;
-}
-.button-container {
-	margin: 4rem 0;
+	padding: .5rem;
+	background: #222;
 }
 .navbar-wrapper {
 	max-width: 80%;
@@ -82,22 +98,14 @@ main {
   display: block;
   clear: both;
 }
-.button-container {
-	margin: 4rem 0;
-}
-footer {
-	text-align: left;
-	border-top: 1px solid #ddd;
-}
-.footer-text {
-	font-size: 1.875rem;
-}
+
 div.content {
 	padding: 2.5rem 0;
 }
 div.content p {
 	text-align: left;
 	font-size: 1.125rem
+	color: #ddd;
 }
 .section-title {
 	margin: 4rem auto 1rem;
@@ -124,12 +132,13 @@ hr {
 }
 .contact-social li {
 	display: inline-block;
+	color: #ddd;
 }
 .contact-card h3 {
 	/*text-transform: none;*/
 }
 .contact-card .marketing-text {
-	font-size: 2rem;
+	/*font-size: 2rem;*/
 	padding: 0;
 }
 .contact {
@@ -148,7 +157,6 @@ hr {
 .dropdown>.dropdown-toggle:active {
   pointer-events: none;
 }
-
 .dropdown-hover::after {
   display: inline-block;
   width: 0;
@@ -171,10 +179,9 @@ hr {
 	text-align: left;
 	margin-top: 5rem;
 }
-
-
-
-
+.button-container {
+	margin: 4rem 0;
+}
 .btn-custom {
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
@@ -189,7 +196,11 @@ hr {
 	margin-right: 30px;
 	transition: all 0.5s;
 }
-.btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom.focus,
+.btn-custom:active,
+.btn-custom.active {
 	color: #eee;
 	background-color: #444;
 }
@@ -404,5 +415,22 @@ color: #777;
 #contact .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active {
 	background-color: #666;
 	color: #999;
-}*/
+}
 /* Footer Section*/
+footer {
+	text-align: left;
+	border-top: 1px solid #ddd;
+	background: #222;
+}
+footer .footer-text h3,
+footer .footer-text a {
+	color: #fff;
+}
+.footer-text {
+	font-size: 1.875rem;
+	color: #fff;
+}
+.copywrite {
+	padding-bottom: 1rem;
+	margin-bottom: 0;
+}

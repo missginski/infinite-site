@@ -19,30 +19,29 @@
     //         keyboardNav: true,
     //     });
 
-
     // init Isotope
-    // let $grid = $('.grid').isotope({
-    //   itemSelector: '.grid-item',
-    //   layoutMode: 'masonry'
-    // });
+    let $grid = $('.grid').isotope({
+      itemSelector: '.grid-item',
+      layoutMode: 'masonry'
+    });
     // layout Isotope after each image loads
-    // $grid.imagesLoaded().progress( function() {
-    //   $grid.isotope('layout');
-    // });
+    $grid.imagesLoaded().progress( function() {
+      $grid.isotope('layout');
+    });
     // Isotope layout and filters
-    // let filterFns = {};
-    // $('.filters-button-group').on( 'click', 'button', function() {
-    //   let filterValue = $( this ).attr('data-filter');
-    //   filterValue = filterFns[ filterValue ] || filterValue;
-    //   $grid.isotope({ filter: filterValue });
-    // });
-    // $('.button-group').each( function( i, buttonGroup ) {
-    //   let $buttonGroup = $( buttonGroup );
-    //   $buttonGroup.on( 'click', 'button', function() {
-    //     $buttonGroup.find('.is-checked').removeClass('is-checked');
-    //     $( this ).addClass('is-checked');
-    //   });
-    // });
+    let filterFns = {};
+    $('.filters-button-group').on( 'click', 'button', function() {
+      let filterValue = $( this ).attr('data-filter');
+      filterValue = filterFns[ filterValue ] || filterValue;
+      $grid.isotope({ filter: filterValue });
+    });
+    $('.button-group').each( function( i, buttonGroup ) {
+      let $buttonGroup = $( buttonGroup );
+      $buttonGroup.on( 'click', 'button', function() {
+        $buttonGroup.find('.is-checked').removeClass('is-checked');
+        $( this ).addClass('is-checked');
+      });
+    });
 
 
 		$('.carousel-item:first-child').addClass('active');

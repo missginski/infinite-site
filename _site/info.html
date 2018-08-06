@@ -16,214 +16,221 @@
 	<!-- <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
 	<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css"> -->
 </head>
-<body>
 
-	<!-- Start Header Area -->
+<body>
 	<header id="site-header">
-		<div class="container mx-auto">
-			<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-				<a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo" alt="logo" /></a>
+		<!-- <div class="container mx-auto"> -->
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top menu-scroll">
+			<div class="container mx-auto">
+				<a class="navbar-brand logo-wrapper" href="index.html">
+					<img src="images/logo-dark.png" class="logo" alt="logo" />
+					<h1 class="logo-dark text-white">Infinite Studios</h1>
+				</a>
+			  <!-- <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo" alt="logo" /></a> -->
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainnav" aria-controls="mainnav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
 				<div class="collapse navbar-collapse" id="mainnav">
-					<ul class="navbar-nav ml-auto">
+			    <ul class="navbar-nav ml-auto">
 						<li class="nav-item">
 							<a class="nav-link" href="index.html">Home</a>
 						</li>
-						<li class="nav-item active dropdown">
-							<a class="nav-link dropdown-hover" href="info.html" id="mainnav" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+						<li class="nav-item dropdown">
+			        <a class="nav-link dropdown-hover" href="info.html" id="mainnav" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 								<a class="dropdown-item" href="clients.html">Clients</a>
-								<a class="dropdown-item" href="services.html">Services</a>
+			          <a class="dropdown-item" href="services.html">Services</a>
 								<a class="dropdown-item" href="contact.html">Contact</a>
-							</div>
+			        </div>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-hover" href="studio.html" id="mainnav" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">The Studio</a>
+			        <a class="nav-link dropdown-hover" href="studio.html" id="mainnav" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">The Studio</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="portfolio.html">Studio Photos</a>
+			          <a class="dropdown-item" href="portfolio.html">Studio Photos</a>
 								<a class="dropdown-item" href="gear.html">Gear List</a>
-							</div>
+			        </div>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Blog</a>
+			        <a class="nav-link" href="blog.html">Blog</a>
+			      </li>
+			    </ul>
+			  </div>
+			</div>	<!--- container --------->
+		</nav>
+
+	</header>
+		<!-- End Header Area -->
+
+	<main role="main">
+		<div class="container mx-auto">
+	<h2 class="section-title text-center">About</h2>
+	<hr class="w-50 mx-auto" />
+	<p class="marketing-text">
+		With more <strong>Gold & Platinum</strong> records than a dozen people can count on their hands, we are the
+		<em>Bay Area's</em> <strong>premier provider for sound engineering.</strong>
+	</p>
+	<div class="row">
+		<div class="col-sm-6">
+			<img src="images/about1_img.jpg" class="w-100" />
+		</div>
+		<div class="col-sm-6">
+			<img src="images/about2_img.jpg" class="w-100" />
+		</div>
+	</div>
+	<div class="content">
+		<p>Infinite Studios is a commercial recording facility in the greater Bay Area, owned by acclaimed engineer & producer Michael Denten. On the cutting edge of modern day technology, Infinite boasts a state of the art Avid S6 mixing console as well as the coveted Burl Audio Mothership, making it one of the premiere and highest quality studios in Northern California.</p>
+		<p>Mixing and Mastering have quickly become an in-house specialty as Michael continues to amass an impressive list of credits. Clients include E-40, Tupac Shakur, MC Hammer, Walter Hawkins, Bobby Brown & Giovanni Hidalgo, as well as single credits that include the timeless classic "I Got 5 On It." The studio is also fully equipped with surround 5.1 mixing capabilities that has led to work on numerous films / TV shows including Hawaii 5-0 and the re-release of the Rocky V soundtrack.</p>
+	</div>
+	<p class="marketing-text">
+		For more information or quotes, email: <a href="mailto:info@infinitestudios.com">info@infinitestudios.com</a>
+	</p>
+	<!-- End About Area -->
+	<!-- Start Clients Area -->
+	<div class="container mx-auto">
+		<h2 class="section-title text-center">Select Clients</h2>
+		<hr class="w-50 mx-auto" />
+		<div class="row">
+			<div class="col-md-4 mx-auto">
+				<h3 class="h4">Recording</h3>
+				<div class="recording-clients">
+					<ul class="recording">
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-4 mx-auto">
+				<h3 class="h4 ">Mixing</h3>
+				<div class="mixing-clients">
+					<ul class="mixing">
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-4 mx-auto">
+				<h3 class="h4 ">Mastering</h3>
+				<div class="mastering-clients">
+					<ul class="mastering">
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<p class="text-center">
+		<!-- ** Scroll the list that goes on forevers -->
+	</p>
+	<!-- End Clients Area -->
+	<!-- Start Services Area -->
+	<div class="container mx-auto services">
+		<h2 class="section-title text-center">Services</h2>
+		<hr class="w-50 mx-auto" />
+		<div class="row">
+			<div class="col-sm-12 col-md-6">
+				<img src="images/sessions_img.jpg" class="w-100" />
+			</div>
+			<div class="col-sm-12 col-md-6">
+				<p>
+					We know you work hard on your music, that's why we work just as hard to make sure the finished product is exactly what you envision.<br /><br />
+					With state of the art equipment and experienced engineers, Infinite Studios offers a comfortable environment that is conducive to both creativity and productivity.
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-md-6">
+				<img src="images/mixing_img.jpg" class="w-100" />
+			</div>
+			<div class="col-sm-12 col-md-6">
+				<p class="content">
+					At Infinite Studios we view mixing as a celebrated art form rather than a necessary process. <br /><br />
+					Each session receives the attention to detail and quality of standard that we have become known for. <br /> <br />
+					Whether you are tracking here, or sending in a session that was previously recorded, we produce unrivaled mixes.
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-md-6">
+				<img src="images/mastering_img.jpg" class="w-100" />
+			</div>
+			<div class="col-sm-12 col-md-6">
+				<p>
+					The final step in producing your record. Our mission is to master your project with the quality and style that fits both your music and vision. <br /><br />
+					From the dynamic range of a pristine classical album to the slaps of a Hip Hop record, we can accommodate what your project demands.
+				</p>
+			</div>
+		</div>
+		<a href="portfolio.html" class="btn btn-custom my-btn my-5">view pictures of our facility</a>
+	</div>		<!-- container -->
+	<!-- End services Area -->
+	<!-- Start Contact Area -->
+	<div class="container contact">
+		<h2 class="section-title text-center">Contact</h2>
+		<hr class="w-50 mx-auto" />
+		<p class="marketing-text about">
+			Get in touch and let's make something great together. At our state of the art facilities, the sky is the limit. Let's make your vision a reality.
+		</p>
+		<div class="row contact">
+			<div class="col-md-12 col-lg-6 contact-card text-center">
+				<h3 class="h2">Owner</h3>
+				<p class="content">Mixing / Mastering</p>
+				<p class="marketing-text">Michael Denten</p>
+
+				<a href="mailto:michael@infinitestudios.com" class="marketing-text">michael@infinitestudios.com</a>
+			</div>
+			<div class="col-md-12 col-lg-6 mt-5 pt-5 mt-lg-0 pt-lg-0 contact-card text-center">
+				<h3 class="h2">Engineer</h3>
+				<p class="content">Recording / Mixing</p>
+				<p class="marketing-text">Migui Maloles</p>
+				<a href="mailto:migui@infinitestudios.com" class="marketing-text">migui@infinitestudios.com</a>
+			</div>
+		</div>
+	</div>		<!-- container -->
+</div>
+
+	</main>
+
+	<!-- Start Footer -->
+	<footer>
+		<div class="container pt-2 mt-2">
+			<div class="row footer-text">
+				<div class="col-12 col-lg-6">
+					<p class="footer-text">
+						<h3 class="h2 pt-3 py-1">Infinite Studios</h3>
+						<div class="row">
+							<div class="col-sm-1 text-center pt-2 mt-2 pl-4">
+								<i class="fas fa-map-marker-alt fa-lg"></i>
+							</div>
+							<div class="col-sm-10 ml-2 pl-4">
+								<p class="footer-text icon-text">
+									3132 Marina Dr, <br>
+									Alameda, CA 94501
+								</p>
+							</div>
+						</div>
+					</p>
+				</div>
+				<div class="col-12 col-lg-6">
+					<p class="pt-3 footer-text">
+						<i class="fas fa-envelope fa-xs pl-1 pr-3"></i>
+						<a href="mailto:info@infinitestudios.com" class="py-">info@infinitestudios.com</a>
+						<br />
+						<i class="fas fa-phone fa-xs pl-1 pr-3"></i>
+						 (510) 521-0321
+					</p>
+					<ul class="contact-social pt-1">
+						<li class="pr-4">
+							<a href="#0"><i class="fab fa-facebook fa-lg"></i></a>
+						</li>
+						<li class="pr-4">
+							<a href="#0"><i class="fab fa-twitter fa-lg"></i></a>
+						</li>
+						<li class="pr-4">
+							<a href="#0"><i class="fab fa-instagram fa-lg"></i></a>
 						</li>
 					</ul>
 				</div>
-			</nav>
-		</div>	<!--- container --------->
-	</header>
-	<!-- End Header Area -->
-	<!-- Start About Area -->
-	<main role="main">
-	<div class="container mx-auto">
-		<h2 class="section-title text-center">About</h2>
-		<hr class="w-50 mx-auto" />
-		<p class="marketing-text">
-			With more <strong>Gold & Platinum</strong> records than a dozen people can count on their hands, we are the
-			<em>Bay Area's</em> <strong>premier provider for sound engineering.</strong>
-		</p>
-		<div class="row">
-			<div class="col-sm-6">
-				<img src="images/about1_img.jpg" class="w-100" />
 			</div>
-			<div class="col-sm-6">
-				<img src="images/about2_img.jpg" class="w-100" />
-			</div>
-		</div>
-		<div class="content">
-			<p>Infinite Studios is a commercial recording facility in the greater Bay Area, owned by acclaimed engineer & producer Michael Denten. On the cutting edge of modern day technology, Infinite boasts a state of the art Avid S6 mixing console as well as the coveted Burl Audio Mothership, making it one of the premiere and highest quality studios in Northern California.</p>
-			<p>Mixing and Mastering have quickly become an in-house specialty as Michael continues to amass an impressive list of credits. Clients include E-40, Tupac Shakur, MC Hammer, Walter Hawkins, Bobby Brown & Giovanni Hidalgo, as well as single credits that include the timeless classic "I Got 5 On It." The studio is also fully equipped with surround 5.1 mixing capabilities that has led to work on numerous films / TV shows including Hawaii 5-0 and the re-release of the Rocky V soundtrack.</p>
-		</div>
-		<p class="marketing-text">
-			For more information or quotes, email: <a href="mailto:info@infinitestudios.com">info@infinitestudios.com</a>
-		</p>
-		<!-- End About Area -->
-		<!-- Start Clients Area -->
-		<div class="container mx-auto">
-			<h2 class="section-title text-center">Select Clients</h2>
-			<hr class="w-50 mx-auto" />
-			<div class="row">
-				<div class="col-md-4 mx-auto">
-					<h3 class="h4">Recording</h3>
-					<div class="recording-clients">
-						<ul class="recording">
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-4 mx-auto">
-					<h3 class="h4 ">Mixing</h3>
-					<div class="mixing-clients">
-						<ul class="mixing">
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-4 mx-auto">
-					<h3 class="h4 ">Mastering</h3>
-					<div class="mastering-clients">
-						<ul class="mastering">
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<p class="text-center">
-			<!-- ** Scroll the list that goes on forevers -->
-		</p>
-		<!-- End Clients Area -->
-		<!-- Start Services Area -->
-		<div class="container mx-auto services">
-			<h2 class="section-title text-center">Services</h2>
-			<hr class="w-50 mx-auto" />
-			<div class="row">
-				<div class="col-sm-6">
-					<img src="images/sessions_img.jpg" class="w-100" />
-				</div>
-				<div class="col-sm-6">
-					<p>
-						We know you work hard on your music, that's why we work just as hard to make sure the finished product is exactly what you envision.<br /><br />
-						With state of the art equipment and experienced engineers, Infinite Studios offers a comfortable environment that is conducive to both creativity and productivity.
-					</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-6">
-					<img src="images/mixing_img.jpg" class="w-100" />
-				</div>
-				<div class="col-sm-6">
-					<p class="content">
-						At Infinite Studios we view mixing as a celebrated art form rather than a necessary process. <br /><br />
-						Each session receives the attention to detail and quality of standard that we have become known for. <br /> <br />
-						Whether you are tracking here, or sending in a session that was previously recorded, we produce unrivaled mixes.
-					</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-6">
-					<img src="images/mastering_img.jpg" class="w-100" />
-				</div>
-				<div class="col-sm-6">
-					<p>
-						The final step in producing your record. Our mission is to master your project with the quality and style that fits both your music and vision. <br /><br />
-						From the dynamic range of a pristine classical album to the slaps of a Hip Hop record, we can accommodate what your project demands.
-					</p>
-				</div>
-			</div>
-			<a href="portfolio.html" class="btn btn-custom my-btn my-5">view pictures of our facility</a>
-		</div>		<!-- container -->
-		<!-- End services Area -->
-		<!-- Start Contact Area -->
-		<div class="container contact">
-			<h2 class="section-title text-center">Contact</h2>
-			<hr class="w-50 mx-auto" />
-			<p class="marketing-text about">
-				Get in touch and let's make something great together. At our state of the art facilities, the sky is the limit. Let's make your vision a reality.
+			<p class="pt-5 text-center copywrite">
+				Infinite Studios © 2018 | All rights reserved
 			</p>
-			<div class="row contact">
-				<div class="col-sm-6 contact-card text-center">
-					<h3 class="h2">Owner</h3>
-					<p class="marketing-text">Michael Denten</p>
-					<p class="content">Mixing / Mastering</p>
-					<a href="mailto:michael@infinitestudios.com" class="marketing-text">michael@infinitestudios.com</a>
-				</div>
-				<div class="col-sm-6 contact-card text-center">
-					<h3 class="h2">Engineer</h3>
-					<p class="marketing-text">Migui Maloles</p>
-					<p class="content">Recording / Mixing</p>
-					<a href="mailto:migui@infinitestudios.com" class="marketing-text">migui@infinitestudios.com</a>
-				</div>
-			</div>
-		</div>		<!-- container -->
-		<!-- End Contact Area -->
-	</div>
-	</main>
-		<!-- Start Footer -->
-		<footer>
-			<div class="container pt-2 my-2">
-				<div class="row footer-text">
-					<div class="col-12 col-lg-6">
-						<p class="footer-text">
-							<h3 class="h2 pt-3 py-1">Infinite Studios</h3>
-							<div class="row">
-								<div class="col-sm-1 text-center pt-2 mt-2 pl-4">
-									<i class="fas fa-map-marker-alt fa-lg"></i>
-								</div>
-								<div class="col-sm-10 ml-2 pl-4">
-									<p class="footer-text icon-text">
-										3132 Marina Dr, <br>
-										Alameda, CA 94501
-									</p>
-								</div>
-							</div>
-						</p>
-					</div>
-					<div class="col-12 col-lg-6">
-						<p class="pt-3 footer-text">
-							<i class="fas fa-envelope fa-xs pl-1 pr-3"></i>
-							<a href="mailto:info@infinitestudios.com" class="py-">info@infinitestudios.com</a>
-							<br />
-							<i class="fas fa-phone fa-xs pl-1 pr-3"></i>
-							 (510) 521-0321
-						</p>
-						<ul class="contact-social pt-1">
-							<li class="pr-4">
-								<a href="#0"><i class="fab fa-facebook fa-lg"></i></a>
-							</li>
-							<li class="pr-4">
-								<a href="#0"><i class="fab fa-twitter fa-lg"></i></a>
-							</li>
-							<li class="pr-4">
-								<a href="#0"><i class="fab fa-instagram fa-lg"></i></a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<p class="pt-5 text-center">
-					Infinite Studios © 2018 | All rights reserved
-				</p>
-			</div>
-		</footer>
+		</div>
+	</footer>
 
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -231,7 +238,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
 	<!-- <script type="text/javascript" src="js/SmoothScroll.js"></script> -->
-	<script type="text/javascript" src="js/nivo-lightbox.js"></script>
+	<!-- <script type="text/javascript" src="js/nivo-lightbox.js"></script> -->
 	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
 	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
 

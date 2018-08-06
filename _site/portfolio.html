@@ -8,7 +8,6 @@
 	<meta name="author" content="">
 
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto" rel="stylesheet">	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
 	<link rel="stylesheet" href="css/bootstrap_lux.css" type="text/css" />
@@ -19,12 +18,15 @@
 </head>
 
 <body>
-<!-- Start Header Area -->
-<div class="site-wrapper">
 	<header id="site-header">
-		<div class="container mx-auto">
-			<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-			  <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo" alt="logo" /></a>
+		<!-- <div class="container mx-auto"> -->
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top menu-scroll">
+			<div class="container mx-auto">
+				<a class="navbar-brand logo-wrapper" href="index.html">
+					<img src="images/logo-dark.png" class="logo" alt="logo" />
+					<h1 class="logo-dark text-white">Infinite Studios</h1>
+				</a>
+			  <!-- <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo" alt="logo" /></a> -->
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainnav" aria-controls="mainnav" aria-expanded="false" aria-label="Toggle navigation">
 			    <span class="navbar-toggler-icon"></span>
 			  </button>
@@ -41,7 +43,7 @@
 								<a class="dropdown-item" href="contact.html">Contact</a>
 			        </div>
 						</li>
-						<li class="nav-item active dropdown">
+						<li class="nav-item dropdown">
 			        <a class="nav-link dropdown-hover" href="studio.html" id="mainnav" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">The Studio</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 			          <a class="dropdown-item" href="portfolio.html">Studio Photos</a>
@@ -49,224 +51,223 @@
 			        </div>
 						</li>
 						<li class="nav-item">
-			        <a class="nav-link" href="#">Blog</a>
+			        <a class="nav-link" href="blog.html">Blog</a>
 			      </li>
 			    </ul>
 			  </div>
-			</nav>
-		</div>	<!--- container --------->
+			</div>	<!--- container --------->
+		</nav>
+
 	</header>
-	<!-- End Header Area -->
-	<!-- Portfolio Section -->
+		<!-- End Header Area -->
+
 	<main role="main">
 		<div id="studio">
-		  <div class="container">
-		    <div class="section-title">
-					<h2 class="section-title text-center pt-5 mt-5">The Studio</h2>
-					<hr class="mb-4 w-50 mx-auto" />
-		    </div>
-				<div class="button-group filters-button-group">
-					<button type="button" class="btn btn-custom my-btn is-checked" data-filter="*">All</button>
-					<button type="button" class="btn btn-custom my-btn" data-filter=".lounge">Lounge</button>
-					<button type="button" class="btn btn-custom my-btn"  data-filter=".controlroom">Control Room</button>
-					<button type="button" class="btn btn-custom my-btn" data-filter=".isoroom">Iso Room</button>
-					<button type="button" class="btn btn-custom my-btn" data-filter=".gear">Gear</button>
-				</div>
-				<div class="row grid">
-					<div class="col-sm-6 col-md-4 grid-item controlroom">
-						<div class="hover-bg">
-							<a href="images/equipment.jpg" title="Control Room" data-lightbox-gallery="studio-gallery">
-								<div class="hover-text">
-									<div class="overlay-caption">
-										<div class="overlay-content">
-											<h4>Control Room</h4>
-										</div>
-									</div>
-								</div>
-								<img src="images/equipment.jpg" class="img-responsive w-100" />
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-4 grid-item lounge">
-						<div class="hover-bg">
-							<a href="images/couch.jpg" title="Lounge" data-lightbox-gallery="studio-gallery">
-								<div class="hover-text">
-									<div class="overlay-caption">
-										<div class="overlay-content">
-											<h4>Lounge</h4>
-										</div>
-									</div>
-								</div>
-								<img src="images/couch.jpg" class="img-responsive w-100" />
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-4 grid-item lounge">
-						<div class="hover-bg">
-							<a href="images/cokemachine.jpg" title="Lounge" data-lightbox-gallery="studio-gallery">
-								<div class="hover-text">
-									<div class="overlay-caption">
-										<div class="overlay-content">
-											<h4>Lounge</h4>
-										</div>
-									</div>
-								</div>
-								<img src="images/cokemachine.jpg" class="img-responsive w-100" />
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-4 grid-item gear">
-						<div class="hover-bg">
-							<a href="images/keyboards.jpg" title="Gear" data-lightbox-gallery="studio-gallery">
-								<div class="hover-text">
-									<div class="overlay-caption">
-										<div class="overlay-content">
-											<h4>Gear</h4>
-										</div>
-									</div>
-								</div>
-								<img src="images/keyboards.jpg" class="img-responsive w-100" />
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-4 grid-item isoroom">
-						<div class="hover-bg">
-							<a href="images/isoroom.jpg" title="Iso Room" data-lightbox-gallery="studio-gallery">
-								<div class="hover-text">
-									<div class="overlay-caption">
-										<div class="overlay-content">
-											<h4>Iso Room</h4>
-										</div>
-									</div>
-								</div>
-								<img src="images/isoroom.jpg" class="img-responsive w-100" />
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-4 grid-item isoroom">
-						<div class="hover-bg">
-							<a href="images/microphonefull.jpg" title="Iso Room" data-lightbox-gallery="studio-gallery">
-								<div class="hover-text">
-									<div class="overlay-caption">
-										<div class="overlay-content">
-											<h4>Iso Room</h4>
-										</div>
-									</div>
-								</div>
-								<img src="images/microphonefull.jpg" class="img-responsive w-100" />
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-4 grid-item controlroom">
-						<div class="hover-bg">
-							<a href="images/equipment2.jpg" title="Control Room" data-lightbox-gallery="studio-gallery">
-								<div class="hover-text">
-									<div class="overlay-caption">
-										<div class="overlay-content">
-											<h4>Control Room</h4>
-										</div>
-									</div>
-								</div>
-								<img src="images/equipment2.jpg" class="img-responsive w-100" />
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-4 grid-item controlroom">
-						<div class="hover-bg">
-							<a href="images/equipment3.jpg" title="Control Room" data-lightbox-gallery="studio-gallery">
-								<div class="hover-text">
-									<div class="overlay-caption">
-										<div class="overlay-content">
-											<h4>Control Room</h4>
-										</div>
-									</div>
-								</div>
-								<img src="images/equipment3.jpg" class="img-responsive w-100" />
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-4 grid-item lounge">
-						<div class="hover-bg">
-							<a href="images/kitchen.jpg" title="Lounge" data-lightbox-gallery="studio-gallery">
-								<div class="hover-text">
-									<div class="overlay-caption">
-										<div class="overlay-content">
-											<h4>Lounge</h4>
-										</div>
-									</div>
-								</div>
-								<img src="images/kitchen.jpg" class="img-responsive w-100" />
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-4 grid-item gear">
-						<div class="hover-bg">
-							<a href="images/equipment2.jpg" title="Gear" data-lightbox-gallery="studio-gallery">
-								<div class="hover-text">
-									<div class="overlay-caption">
-										<div class="overlay-content">
-											<h4>Gear</h4>
-										</div>
-									</div>
-								</div>
-								<img src="images/fenderamp.jpg" class="img-responsive w-100" />
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-4 grid-item isoroom">
-						<div class="hover-bg">
-							<a href="images/guitars.jpg" title="Gear" data-lightbox-gallery="studio-gallery">
-								<div class="hover-text">
-									<div class="overlay-caption">
-										<div class="overlay-content">
-											<h4>Gear</h4>
-										</div>
-									</div>
-								</div>
-								<img src="images/guitars.jpg" class="img-responsive w-100" />
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-4 grid-item gear">
-						<div class="hover-bg">
-							<a href="images/vintageequip.jpg" title="Gear" data-lightbox-gallery="studio-gallery">
-								<div class="hover-text">
-									<div class="overlay-caption">
-										<div class="overlay-content">
-											<h4>Gear</h4>
-										</div>
-									</div>
-								</div>
-								<img src="images/vintageequip.jpg" class="img-responsive w-100" />
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-4 grid-item isoroom">
-						<div class="hover-bg">
-							<a href="images/isoroom2.jpg" title="Gear" data-lightbox-gallery="studio-gallery">
-								<div class="hover-text">
-									<div class="overlay-caption">
-										<div class="overlay-content">
-											<h4>Gear</h4>
-										</div>
-									</div>
-								</div>
-								<img src="images/isoroom2.jpg" class="img-responsive w-100" />
-							</a>
-						</div>
-					</div>
-				</div>
-		  </div>	<!--- container --------->
+  <div class="container">
+    <div class="section-title">
+			<h2 class="section-title text-center pt-5 mt-5">The Studio</h2>
+			<hr class="mb-4 w-50 mx-auto" />
+    </div>
+		<div class="button-group filters-button-group">
+			<button type="button" class="btn btn-custom my-btn is-checked" data-filter="*">All</button>
+			<button type="button" class="btn btn-custom my-btn" data-filter=".lounge">Lounge</button>
+			<button type="button" class="btn btn-custom my-btn"  data-filter=".controlroom">Control Room</button>
+			<button type="button" class="btn btn-custom my-btn" data-filter=".isoroom">Iso Room</button>
+			<button type="button" class="btn btn-custom my-btn" data-filter=".gear">Gear</button>
 		</div>
-	</div>  <!--- site wrapper --------->
-	<!-- End Studio Area -->
-	<a href="info.html" class="btn btn-custom my-btn my-5">find out more</a>
+		<div class="row grid">
+			<div class="col-sm-6 col-md-4 grid-item controlroom">
+				<div class="hover-bg">
+					<a href="images/equipment.jpg" title="Control Room" data-lightbox-gallery="studio-gallery">
+						<div class="hover-text">
+							<div class="overlay-caption">
+								<div class="overlay-content">
+									<h4>Control Room</h4>
+								</div>
+							</div>
+						</div>
+						<img src="images/equipment.jpg" class="img-responsive w-100" />
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4 grid-item lounge">
+				<div class="hover-bg">
+					<a href="images/couch.jpg" title="Lounge" data-lightbox-gallery="studio-gallery">
+						<div class="hover-text">
+							<div class="overlay-caption">
+								<div class="overlay-content">
+									<h4>Lounge</h4>
+								</div>
+							</div>
+						</div>
+						<img src="images/couch.jpg" class="img-responsive w-100" />
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4 grid-item lounge">
+				<div class="hover-bg">
+					<a href="images/cokemachine.jpg" title="Lounge" data-lightbox-gallery="studio-gallery">
+						<div class="hover-text">
+							<div class="overlay-caption">
+								<div class="overlay-content">
+									<h4>Lounge</h4>
+								</div>
+							</div>
+						</div>
+						<img src="images/cokemachine.jpg" class="img-responsive w-100" />
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4 grid-item gear">
+				<div class="hover-bg">
+					<a href="images/keyboards.jpg" title="Gear" data-lightbox-gallery="studio-gallery">
+						<div class="hover-text">
+							<div class="overlay-caption">
+								<div class="overlay-content">
+									<h4>Gear</h4>
+								</div>
+							</div>
+						</div>
+						<img src="images/keyboards.jpg" class="img-responsive w-100" />
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4 grid-item isoroom">
+				<div class="hover-bg">
+					<a href="images/isoroom.jpg" title="Iso Room" data-lightbox-gallery="studio-gallery">
+						<div class="hover-text">
+							<div class="overlay-caption">
+								<div class="overlay-content">
+									<h4>Iso Room</h4>
+								</div>
+							</div>
+						</div>
+						<img src="images/isoroom.jpg" class="img-responsive w-100" />
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4 grid-item isoroom">
+				<div class="hover-bg">
+					<a href="images/microphonefull.jpg" title="Iso Room" data-lightbox-gallery="studio-gallery">
+						<div class="hover-text">
+							<div class="overlay-caption">
+								<div class="overlay-content">
+									<h4>Iso Room</h4>
+								</div>
+							</div>
+						</div>
+						<img src="images/microphonefull.jpg" class="img-responsive w-100" />
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4 grid-item controlroom">
+				<div class="hover-bg">
+					<a href="images/equipment2.jpg" title="Control Room" data-lightbox-gallery="studio-gallery">
+						<div class="hover-text">
+							<div class="overlay-caption">
+								<div class="overlay-content">
+									<h4>Control Room</h4>
+								</div>
+							</div>
+						</div>
+						<img src="images/equipment2.jpg" class="img-responsive w-100" />
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4 grid-item controlroom">
+				<div class="hover-bg">
+					<a href="images/equipment3.jpg" title="Control Room" data-lightbox-gallery="studio-gallery">
+						<div class="hover-text">
+							<div class="overlay-caption">
+								<div class="overlay-content">
+									<h4>Control Room</h4>
+								</div>
+							</div>
+						</div>
+						<img src="images/equipment3.jpg" class="img-responsive w-100" />
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4 grid-item lounge">
+				<div class="hover-bg">
+					<a href="images/kitchen.jpg" title="Lounge" data-lightbox-gallery="studio-gallery">
+						<div class="hover-text">
+							<div class="overlay-caption">
+								<div class="overlay-content">
+									<h4>Lounge</h4>
+								</div>
+							</div>
+						</div>
+						<img src="images/kitchen.jpg" class="img-responsive w-100" />
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4 grid-item gear">
+				<div class="hover-bg">
+					<a href="images/equipment2.jpg" title="Gear" data-lightbox-gallery="studio-gallery">
+						<div class="hover-text">
+							<div class="overlay-caption">
+								<div class="overlay-content">
+									<h4>Gear</h4>
+								</div>
+							</div>
+						</div>
+						<img src="images/fenderamp.jpg" class="img-responsive w-100" />
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4 grid-item isoroom">
+				<div class="hover-bg">
+					<a href="images/guitars.jpg" title="Gear" data-lightbox-gallery="studio-gallery">
+						<div class="hover-text">
+							<div class="overlay-caption">
+								<div class="overlay-content">
+									<h4>Gear</h4>
+								</div>
+							</div>
+						</div>
+						<img src="images/guitars.jpg" class="img-responsive w-100" />
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4 grid-item gear">
+				<div class="hover-bg">
+					<a href="images/vintageequip.jpg" title="Gear" data-lightbox-gallery="studio-gallery">
+						<div class="hover-text">
+							<div class="overlay-caption">
+								<div class="overlay-content">
+									<h4>Gear</h4>
+								</div>
+							</div>
+						</div>
+						<img src="images/vintageequip.jpg" class="img-responsive w-100" />
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4 grid-item isoroom">
+				<div class="hover-bg">
+					<a href="images/isoroom2.jpg" title="Gear" data-lightbox-gallery="studio-gallery">
+						<div class="hover-text">
+							<div class="overlay-caption">
+								<div class="overlay-content">
+									<h4>Gear</h4>
+								</div>
+							</div>
+						</div>
+						<img src="images/isoroom2.jpg" class="img-responsive w-100" />
+					</a>
+				</div>
+			</div>
+		</div>
+  </div>	<!--- container --------->
+</div>
+<a href="info.html" class="btn btn-custom my-btn my-5">find out more</a>
 
 	</main>
 
 	<!-- Start Footer -->
 	<footer>
-		<div class="container pt-2 my-2">
+		<div class="container pt-2 mt-2">
 			<div class="row footer-text">
 				<div class="col-12 col-lg-6">
 					<p class="footer-text">
@@ -305,7 +306,7 @@
 					</ul>
 				</div>
 			</div>
-			<p class="pt-5 text-center">
+			<p class="pt-5 text-center copywrite">
 				Infinite Studios © 2018 | All rights reserved
 			</p>
 		</div>
@@ -317,9 +318,9 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
 	<!-- <script type="text/javascript" src="js/SmoothScroll.js"></script> -->
-	<script type="text/javascript" src="js/nivo-lightbox.js"></script>
+	<!-- <script type="text/javascript" src="js/nivo-lightbox.js"></script> -->
 	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
-	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
 
 	<script src="data.json"></script>
 	<script src="js/script.js"></script>
