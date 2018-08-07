@@ -70,15 +70,15 @@ ul, ol {
 	max-width: 75px;
 }
 h1.logo-dark {
-	font-family: BebasNeue;
-	font-size: 2.5rem;
+	font-family: 'Josefin Sans', BebasNeue;
+	font-size: 2rem;
 	padding: 0 1rem;
 	font-style: italic;
 	font-weight: lighter;
 	position: absolute;
 	display: inline;
 	color: white;
-	margin-top: .125rem;
+	margin-top: .55rem;
 }
 .navbar {
 	padding: .5rem;
