@@ -58,32 +58,36 @@
       });
     }
 
-    // render clients section
-    function getAllClients(arr) {
-      let currentNames,
-          currentList,
-          listItem;
 
-      arr.forEach(function(e, i) {
-        currentNames = arr[i];
-        currentList = $('#clients' + i);
-        // console.log(currentNames)
-
-        currentNames.forEach(function(name) {
-          listItem = $('<li>');
-          listItem.text(name);
-          currentList.append(listItem);
-        })
-      })
-      // console.log(arr)
-    }
-    getAllClients(clients)
 
 
 }());
 
 
 
+
+// render clients section
+function getAllClients(arr) {
+  let currentNames,
+      currentList,
+      listItem;
+
+  arr.forEach(function(e, i) {
+    currentNames = arr[i];
+    currentList = $('#clients' + i);
+    // console.log(currentNames)
+
+    currentNames.forEach(function(name) {
+      listItem = $('<li>');
+      listItem.text(name);
+      currentList.append(listItem);
+    })
+  })
+  // console.log(arr)
+}
+getAllClients(clients)
+
+// render gear section
 function getGear(arr) {
   let currentNames,
       currentList,
