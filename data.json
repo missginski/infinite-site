@@ -153,6 +153,173 @@ let clients = [
 ]
 
 
+let newGear = [
+	[
+		"Avid S6 custom Sterling desk",
+		"Burl B32 Vancouver"
+	],
+	[
+		"PAS TOC (Custom Coaxial Time-Aligned)",
+		"ATC SCM25a",
+		"Yamaha NS-10 (powered by Bryston 4BST)",
+		"Auratone",
+		"Genelec 1031 (5.1 Surround)",
+		"Avid XMON",
+		"DigiGrid IOX/IOC"
+	],
+	[
+		"Pro Tools 11 HDX 3",
+		"DigiGrid/Waves IOX",
+		"Burl B80 Mothership",
+		"Otari Radar"
+	],
+
+	[
+		"(2) Telefunken U-47 (Matched Set)",
+		"(2) Neumann U-67",
+		"(2) Neumann U-87 (Gold Anniversary Matched Set)",
+		"(2) Neumann U-89",
+		"(2) Neumann KM184 (Matched Set)",
+		"(3) Neumann KM254",
+		"(2) Neumann KM256",
+		"(2) Neumann M49",
+		"Neumann SM69 (Stereo)",
+		"Neumann KMS105",
+		"(2) AKG 414U-BLS",
+		"(2) AKG 414EB (C12 capsule)",
+		"AKG 414",
+		"AKG 414 (Gold Anniversary Edition)",
+		"(2) AKG D112",
+		"AKG D125",
+		"(2) AKG C-61 (-10db Pad Set, CK26 Omni Cap Set, Exten.)",
+		"(4) AKG 451EB (with Swivels, -10 & -20 Pads, Omni Caps)",
+		"(2) Audio Technica 4050",
+		"(2) Audio Technica 4033",
+		"(2) Audio Technica 4051 (Cardioids, Omni, Hyper-cardioid)",
+		"(5) Sennheiser 421",
+		"Sennheiser ME80",
+		"(2) Shure SM7",
+		"(5) Shure SM81",
+		"(4) Shure SM57",
+		"Shure Model 571",
+		"(2) Shure SM-85",
+		"Shure 520DX \"Green Bullet\"",
+		"Sony C37P",
+		"(2) Sony C800G",
+		"Sanken CU-41",
+		"Nakamichi CM300 Omni Cap, Cardioid Cap, Shotgun",
+		"(2) RCA DX77 (Ribbon)",
+		"(2) Royer R-121 (Ribbon)",
+		"Royer SF-12 (Stereo Ribbon)",
+		"(2) Beyer M260 (Ribbon)",
+		"(3) Electro-Voice 664A",
+		"Electro-Voice RE20",
+		"(2) Bruel & Kjaer 4011",
+		"(2) DPA 4003 (130v Omni)"
+	],
+	[
+		"GML 2020 (1 channel)",
+		"True Systems P2 (2 channels)",
+		"Neve 1084 Custom Channel Strip (1 channel)",
+		"Neve 3314 Channel",
+		"Neve V72a (2 channels)",
+		"API 512c (1 channel) 5x",
+		"Vintech Audio X73 (1 channel) 2x",
+		"Millenia HV-3D (8 channels)",
+		"Digidesign PRE (8 channels)",
+		"Avalon 737sp (1 channel) 2x",
+		"DigiGrid IOX (24 channels)"
+	],
+	[
+		"Countryman DI 4x",
+		"Millenia TD-1 (1 channel) 2x",
+		"Avalon U5 (1 channel)",
+		"David Carroll Synth Driver (32 channels) "
+	],
+	[
+		"Universal Audio LA-4 (1 channel) 4x",
+		"Drawmer DL241(2 channels)",
+		"DBX 160x (1 channel) 2x",
+		"Universal Audio 1176 (1 channel)",
+		"Neve 3314"
+	],
+	[
+		"API 550b (1 channel) 3x",
+		"API 560 (1 channel) 2x",
+		"Focusrite RED 2 (2 channels) 2x",
+	],
+	[
+		"TC Electronic System 6000",
+		"Roland SDE3000",
+		"Lexicon 224XL with LARC",
+		"Lexicon PCM42 2x",
+		"Lexicon PCM70",
+		"Lexicon PCM81",
+		"Lexicon PCM91",
+		"Lexicon Model 200",
+		"Yamaha REV 5",
+		"Yamaha SPX90 II",
+		"Eventide Ultra Harmonizer DSP4000",
+		"Eventide Ultra Harmonizer DSP7000",
+		"Eventide H3500",
+		"Sony DPS-R7 ",
+		"Sony DPS-D7",
+		"Castle Phaser III (stereo)"
+	],
+	[
+		"Waves (All Waves Plug-ins)",
+		"McDSP (Emerald Pack)",
+		"Izotope (Mixing/Mastering Bundle)",
+		"Fabfilter (Total Bundle)",
+		"Sonnox",
+		"Soundtoys (Complete Bundle)",
+		"Antares (All Plug-ins)",
+		"Metric Halo (Complete Bundle)",
+		"Lexicon (Complete Bundle)",
+		"Steven Slate Trigger 2"
+	],
+	[
+		"Pro Tools HD 12",
+		"Otari MTR90 24 Track (w/ Dolby Noise Reduction XR Rack)",
+		"Otari Radar",
+		"Tascam DA88 (24 tracks)",
+		"Alesis ADAT (24 tracks)"
+	],
+	[
+		"Rhodes FR 7710",
+		"Kurzweil K2500",
+		"Korg Microkorg",
+		"Korg Radius",
+		"Yamaha CP33",
+		"Yamaha DX7 (Grey Matter mod)",
+		"Roland TR808 (MIDI mod)",
+		"Oberheim Matrix 12",
+		"Roland Juno 106",
+		"Roland TB303 (with CV mod)"
+	],
+	[
+		"Korg Triton Rack",
+		"Yamaha Motif Rack ES",
+		"Roland JV-1080",
+		"Roland MKS70",
+		"Roland MKS20",
+		"Studio Electronics SE1x",
+		"E-MU Vintage Keys",
+		"E-MU Pro/Cussion",
+		"E-MU Proteus 1 ",
+		"Alesis D4"
+	],
+	[
+
+		"JoeCo Blackbox BBR1B (x2; 48 channels)",
+		"ATI 8MX2 (x6; 48 channels)"
+	]
+]
+
+
+
+
+
 
 let gear = [{
 	"mixersSumming":
