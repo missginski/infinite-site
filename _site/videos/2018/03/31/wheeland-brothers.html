@@ -11,10 +11,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto" rel="stylesheet">	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400i" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-	<link rel="stylesheet" href="css/bootstrap_lux.css" type="text/css" />
-	<link rel="stylesheet" href="css/style.css" type="text/css" />
-	<link rel="stylesheet" href="css/main.css" type="text/css" />
+	<link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="/css/bootstrap_lux.css" type="text/css" />
+	<link rel="stylesheet" href="/css/style.css" type="text/css" />
+	<link rel="stylesheet" href="/css/main.css" type="text/css" />
 	<!-- <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
 	<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css"> -->
 </head>
@@ -25,7 +25,7 @@
 		<nav class="navbar navbar-expand-lg navbar-dark fixed-top menu-scroll">
 			<div class="container mx-auto">
 				<a class="navbar-brand logo-wrapper" href="index.html">
-					<img src="images/logo-dark.png" class="logo" alt="logo" />
+					<img src="/images/logo-dark.png" class="logo" alt="logo" />
 					<h1 class="logo-dark text-white">Infinite Studios</h1>
 				</a>
 			  <!-- <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo" alt="logo" /></a> -->
@@ -65,16 +65,28 @@
 
 	<main role="main">
 		<div class="container">
-  <h2 class="spacing">Wheeland Brothers featured on Hawaii 5-0</h2>
-
-  <div class="blog-post spacing">
-    <p class="summary">videos<span class="date">March 31, 2015</span></p>
-    <p>“Like You Do” by Wheeland Brothers featured on Hawaii 5-0!</p>
+	<!-- <h2 class="pt-5">Wheeland Brothers featured on Hawaii 5-0</h2> -->
+	<div class="blog-content text-center">
+		<a href="">
+			<h3 class="h2">Wheeland Brothers featured on Hawaii 5-0</h3>
+		</a>
+		<figure>
+			<iframe width="640" height="360" src="https://www.youtube.com/embed/0f-7Vh8N5I4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</figure>
+		<div class="post-meta">
+			<h6 class="h5">
+				March 31
+			</h6>
+		</div>
+		<p>“Like You Do” by Wheeland Brothers featured on Hawaii 5-0!</p>
 
 <p>Their entire album Muchos Mahalos was mixed and mastered here at Infinite Studios <a href="http://localhost:4000.html">Infinite Studios</a></p>
 
-  </div>
-</div>
+	   <!-- <p><p>“Like You Do” by Wheeland Brothers featured on Hawaii 5-0!</p>
+
+</p> -->
+	</div>
+</div>	<!-- /container -->
 
 	</main>
 
@@ -135,7 +147,7 @@
 	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
 	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
 
-	<script src="data.json"></script>
-	<script src="js/script.js"></script>
+	<script src="/data.json"></script>
+	<script src="/js/script.js"></script>
 </body>
 </html>

@@ -1,12 +1,21 @@
 ---
 layout: default
 ---
-
 <div class="container">
-  <h2 class="spacing">{{ page.title }}</h2>
-
-  <div class="blog-post spacing">
-    <p class="summary">{{ page.category }}<span class="date">{{ page.date | date: '%B %d, %Y' }}</span></p>
-    {{ content }}
-  </div>
-</div>
+	<!-- <h2 class="pt-5">{{ page.title }}</h2> -->
+	<div class="blog-content text-center">
+		<a href="{{ post.url }}">
+			<h3 class="h2">{{ page.title }}</h3>
+		</a>
+		<figure>
+			{{ page.embed }}
+		</figure>
+		<div class="post-meta">
+			<h6 class="h5">
+				{{ page.date | date: '%B %d' }}
+			</h6>
+		</div>
+		{{ content }}
+	   <!-- <p>{{ page.excerpt }}</p> -->
+	</div>
+</div>	<!-- /container -->
