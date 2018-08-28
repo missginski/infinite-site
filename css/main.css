@@ -434,3 +434,7 @@ footer .footer-text a {
 	padding-bottom: 1rem;
 	margin-bottom: 0;
 }
+.card {
+  text-align: left;
+  width: 641px;
+}

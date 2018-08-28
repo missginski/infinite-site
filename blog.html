@@ -8,28 +8,23 @@ title: Infinite Blog
 		<div class="col-md-8">
 
 			{% for post in site.posts %}
-			<div class="section-row blog-content">
-				<a href="{{ post.url }}">
-				<!-- <a href="post.html"> -->
-					<h3 class="h2">{{ post.title }}</h3>
-				</a>
-				<figure>
+			<div class="card mb-4">
+				<figure class="card-img-top">
 					{{ post.embed }}
 				</figure>
-				<div class="post-meta">
-					<h6 class="h5">{{ post.date | date: '%B %d' }}
-				    <!-- <a href="{{ post.url | absolute_url }}">
-				      {{ post.category }}
-				    </a> -->
-					</h6>
+				<div class="card-body">
+					<h3 class="card-title h2">{{ post.title }}</h3>
+					<p class="card-text">
+						{{ post.excerpt }}
+					</p>
+					<a href="{{ post.url }}" class="btn btn-primary">Read More &rarr;</a>
 				</div>
-				<p>
-					<!-- {{ post.description | truncate_words: 20 }} -->
-					{{ post.excerpt }}
-					<!-- “As the title (which is repeated almost 10 times in the chorus) suggests, "Wake & Bake" is a catchy track that guarantees you'll only have one thing on your mind while listening to it. Buddz told Billboard that he initially had the song in mind for a different artist, and you may not be surprised at who it was.” – Billboard. -->
-				</p>
+				<div class="card-footer">
+					{{ post.date | date: '%B %d, %Y' }}
+				</div>
 			</div>
 			{% endfor %}
+
 		</div>
 
 		<div class="col-md-4">
