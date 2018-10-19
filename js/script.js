@@ -75,7 +75,6 @@ function getAllClients(arr) {
   arr.forEach(function(e, i) {
     currentNames = arr[i];
     currentList = $('#clients' + i);
-    // console.log(currentNames)
 
     currentNames.forEach(function(name) {
       listItem = $('<li>');

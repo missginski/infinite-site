@@ -58,6 +58,13 @@
       });
     }
 
+    // var userFeed = new Instafeed({
+    //   get: 'user',
+    //   userId: '43423668',
+    //   clientId: '3e5bd54f86d34ad6b92a8da63bd3cbf7'
+    // });
+    // feed.run();
+
 
 
 
