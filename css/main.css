@@ -440,3 +440,46 @@ footer .footer-text a {
   text-align: left;
   width: 641px;
 }
+
+.instagram-scroller,
+.simply-scroll-clip {
+  width: 100%;
+  height: 210px;
+  position: relative;
+  margin-top: 70px;
+}
+
+.simply-scroll-list {
+  /* width: 8056px; */
+  float: left;
+  width: 4028px;
+}
+
+.instagram-list {
+  height: 280px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: left;
+  position: relative;
+}
+
+.instagram_list a {
+  margin-right: 30px;
+  vertical-align: top;
+  display: block;
+  width: 170px;
+  height: 210px;
+  float: left;
+  }
+
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.scrolling-wrapper a {
+  display: inline-block;
+  padding: .5rem;
+  border-radius: 50px;
+}

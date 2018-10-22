@@ -58,17 +58,24 @@
       });
     }
 
-    // var userFeed = new Instafeed({
-    //   get: 'user',
-    //   userId: '43423668',
-    //   clientId: '3e5bd54f86d34ad6b92a8da63bd3cbf7'
-    // });
-    // feed.run();
-
 
 
 
 }());
+
+var userFeed = new Instafeed({
+    get: 'user',
+    userId: '578062',
+    clientId: '3e5bd54f86d34ad6b92a8da63bd3cbf7',
+    accessToken: '578062.3e5bd54.32cb209554484209bac43de5c05cd9a9',
+    template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a>',
+    // template: '',
+    resolution: 'low_resolution',
+    sortBy: 'most-recent',
+    limit: 32,
+    links: false
+  });
+  userFeed.run();
 
 
 
@@ -82,7 +89,6 @@ function getAllClients(arr) {
   arr.forEach(function(e, i) {
     currentNames = arr[i];
     currentList = $('#clients' + i);
-    // console.log(currentNames)
 
     currentNames.forEach(function(name) {
       listItem = $('<li>');
