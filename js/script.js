@@ -69,7 +69,7 @@ var userFeed = new Instafeed({
     clientId: '3e5bd54f86d34ad6b92a8da63bd3cbf7',
     accessToken: '578062.3e5bd54.32cb209554484209bac43de5c05cd9a9',
     // template: '<a href="{{link}}" target="_blank" id="{{id}}"><img class="insta-pic" src="{{image}}" /></a>',
-    template: '<img src="{{image}}" />',
+    template: '<a href="{{link}}" class="instapic" target="_blank" id="{{id}}"><img src="{{image}}" /></a>',
     resolution: 'low_resolution',
     sortBy: 'most-recent',
     limit: 32,

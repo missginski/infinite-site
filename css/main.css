@@ -456,9 +456,10 @@ footer .footer-text a {
   margin-bottom: 80px;
 }
 
-.instapic > img {
+.instapic img {
   height: 350px;
   width: 350px;
+  margin-right: .5rem;
 }
 
 /* .photobanner > img:first-child {
@@ -466,7 +467,7 @@ footer .footer-text a {
 } */
 
 .instapic:first-child {
-  animation: bannermove 3s linear infinite;
+  animation: bannermove 30s linear infinite;
 }
 
 @keyframes "bannermove" {
