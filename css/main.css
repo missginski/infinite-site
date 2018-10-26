@@ -67,19 +67,31 @@ ul, ol {
   position:  relative;
 }
 .logo {
-	max-width: 75px;
+	max-width: 35px;
 }
 h1.logo-dark {
 	font-family: 'Josefin Sans', BebasNeue;
-	font-size: 2rem;
-	padding: 0 1rem;
+	font-size: 1rem;
+	padding: 0 .25rem;
 	font-style: italic;
 	font-weight: lighter;
 	position: absolute;
 	display: inline;
 	color: white;
-	margin-top: .55rem;
+	margin-top: .4rem;
 }
+
+@media (min-width: 576px) {
+  .logo {
+  	max-width: 75px;
+  }
+  h1.logo-dark {
+    font-size: 2rem;
+    margin-top: .55rem;
+    padding: 0 1rem;
+  }
+}
+
 .navbar {
 	padding: .5rem;
 	background: #222;
@@ -428,10 +440,23 @@ footer .footer-text h3,
 footer .footer-text a {
 	color: #fff;
 }
+footer .footer-text h3 {
+  font-size: 1.25rem;
+}
 .footer-text {
-	font-size: 1.875rem;
+	font-size: 1rem;
 	color: #fff;
 }
+
+@media (min-width: 576px) {
+  .footer-text {
+  	font-size: 1.875rem;
+  }
+  .footer-text h3 {
+    font-size: 2rem;
+  }
+}
+
 .copywrite {
 	padding-bottom: 1rem;
 	margin-bottom: 0;

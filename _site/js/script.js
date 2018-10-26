@@ -63,6 +63,7 @@
 
 }());
 
+// instafeed
 var userFeed = new Instafeed({
     get: 'user',
     userId: '578062',
