@@ -62,6 +62,8 @@ ul, ol {
 	webkit-padding: 0;
 	moz-padding: 0;
 }
+
+/* Header Section */
 .logo-wrapper {
   display:  block;
   position:  relative;
@@ -80,7 +82,6 @@ h1.logo-dark {
 	color: white;
 	margin-top: .4rem;
 }
-
 @media (min-width: 576px) {
   .logo {
   	max-width: 75px;
@@ -91,7 +92,6 @@ h1.logo-dark {
     padding: 0 1rem;
   }
 }
-
 .navbar {
 	padding: .5rem;
 	background: #222;
@@ -112,7 +112,6 @@ main {
   display: block;
   clear: both;
 }
-
 div.content {
 	padding: 2.5rem 0;
 }
@@ -218,28 +217,7 @@ hr {
 	color: #eee;
 	background-color: #444;
 }
-/* Header Section */
-.intro .overlay {
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,d5dade+100&0.5+0,0+100 */
-	background: -moz-linear-gradient(left, rgba(255,255,255,0.5) 0%, rgba(213,218,222,0) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, rgba(255,255,255,0.5) 0%, rgba(213,218,222,0) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, rgba(255,255,255,0.5) 0%, rgba(213,218,222,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00d5dade', GradientType=1 ); /* IE6-9 */
-}
-.intro .fa {
-	font-size: 94px;
-	margin-bottom: 40px;
-	color: #fff;
-}
-.intro p {
-	color: #444;
-	margin: 10px 0 20px 0;
-	font-size: 22px;
-}
-header .intro-text {
-	padding-top: 250px;
-	padding-bottom: 200px;
-}
+
 /* Portfolio Section */
 #portfolio {
 	padding: 40px 0 100px 0;
@@ -340,95 +318,10 @@ ol.type li a:hover {
 	color: #777;
 	margin: 60px 0;
 }
-#contact img {
-	width: 140px;
-	margin: 5px 30px 10px 0;
-}
-#contact p {
-	color: #666;
-	margin-bottom: 20px;
-	line-height: 24px;
-}
-#contact .social {
-	margin-top: 40px;
-}
-#contact .social ul li {
-	display: inline-block;
-	margin-right: 20px;
-}
-#contact .social i.fa {
-	font-size: 26px;
-	padding: 4px;
-	color: #777;
-	transition: all 0.3s;
-}
-#contact .social i.fa:hover {
-	color: #eee;
-}
-#contact form {
-	padding: 0;
-}
-#contact .text-danger {
-	color: #cc0033;
-	text-align: left;
-}
 label {
 	font-size: 12px;
 	font-weight: 400;
 	float: left;
-}
-#contact .form-control {
-	display: block;
-	width: 100%;
-	padding: 6px 12px;
-	font-size: 15px;
-	font-weight: 400;
-	line-height: 1.42857143;
-	color: #aaa;
-	background-color: #444;
-	background-image: none;
-	border: 0;
-	border-radius: 0;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-	-webkit-transition: none;
-	-o-transition: none;
-	transition: none;
-}
-#contact .form-control:focus {
-	border-color: #999;
-	outline: 0;
-	-webkit-box-shadow: transparent;
-	box-shadow: transparent;
-}
-.form-control::-webkit-input-placeholder {
-color: #777;
-}
-.form-control:-moz-placeholder {
-color: #777;
-}
-.form-control::-moz-placeholder {
-color: #777;
-}
-.form-control:-ms-input-placeholder {
-color: #777;
-}
-#contact .btn-default {
-	font-weight: 400;
-	color: #666;
-	background-color: transparent;
-	border: 2px solid #666;
-	padding: 10px 20px;
-	margin: 0;
-	font-size: 15px;
-	border-radius: 0;
-	margin-top: 20px;
-	text-transform: uppercase;
-	transition: all 0.3s;
-}
-#contact .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active {
-	background-color: #666;
-	color: #999;
 }
 /* Footer Section*/
 footer {
@@ -447,7 +340,6 @@ footer .footer-text h3 {
 	font-size: 1rem;
 	color: #fff;
 }
-
 @media (min-width: 576px) {
   .footer-text {
   	font-size: 1.875rem;
@@ -456,60 +348,92 @@ footer .footer-text h3 {
     font-size: 2rem;
   }
 }
-
 .copywrite {
 	padding-bottom: 1rem;
 	margin-bottom: 0;
 }
-.card {
-  text-align: left;
-  width: 641px;
-}
-
-
-
 
 .photobanner--container {
   max-width: 1440px;
   overflow: hidden;
   margin: 50px auto;
+  background-color: #ececec;
 }
-
 .photobanner {
   height: 350px;
-  width: 3550px;
+  width: 11360px;
   margin-bottom: 80px;
+  padding-top: 40px;
+  display: inline-block;
+  position: relative;
 }
 
-.instapic img {
-  height: 350px;
-  width: 350px;
-  margin-right: .5rem;
-}
-
-/* .photobanner > img:first-child {
-  animation: bannermove 30s linear infinite;
+/* .photobanner--container:hover,
+.photobanner {
+  animation-play-state: paused;
 } */
 
+.instapic img {
+  height: auto;
+  max-width: 350px;
+  margin-right: 1.75rem;
+  border-radius: 10px;
+}
 .instapic:first-child {
-  animation: bannermove 30s linear infinite;
+  animation: bannermove 180s linear infinite;
+  animation-play-state: running;
+}
+
+.instapic {
+  animation-play-state: running;
+}
+
+.instapic:hover {
+  animation-play-state: paused;
 }
 
 @keyframes "bannermove" {
   0% {
-    margin-left: 0px;
+    margin-left: 860px;
   }
   100% {
-    margin-left: -2125px;
+    margin-left: -21560px;
   }
 }
 
 @-webkit-keyframes "bannermove" {
- 0% {
-   margin-left: 0px;
- }
- 100% {
-   margin-left: -2125px;
- }
+  0% {
+    margin-left: 860px;
+  }
+  100% {
+    margin-left: -21560px;
+  }
+}
 
+
+.photobanner img {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.photobanner img:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+
+  -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+  box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
+
+.photobanner:hover {
+  -webkit-animation-play-state:paused;
+  -moz-animation-play-state:paused;
+  -o-animation-play-state:paused;
+  animation-play-state:paused;
 }

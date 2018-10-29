@@ -66,12 +66,12 @@
 // instafeed
 var userFeed = new Instafeed({
     get: 'user',
-    userId: '578062',
+    userId: '43423668',
     clientId: '3e5bd54f86d34ad6b92a8da63bd3cbf7',
-    accessToken: '578062.3e5bd54.32cb209554484209bac43de5c05cd9a9',
+    accessToken: '43423668.1677ed0.aedf2b31b6a54e12870a1556c0a803e1',
     // template: '<a href="{{link}}" target="_blank" id="{{id}}"><img class="insta-pic" src="{{image}}" /></a>',
-    template: '<a href="{{link}}" class="instapic" target="_blank" id="{{id}}"><img src="{{image}}" /></a>',
-    resolution: 'low_resolution',
+    template: '<a href="{{link}}" class="instapic" target="_blank" id="{{id}}"><img class="img-responsive" src="{{image}}" /></a>',
+    resolution: 'standard_resolution',
     sortBy: 'most-recent',
     limit: 32,
     links: false
