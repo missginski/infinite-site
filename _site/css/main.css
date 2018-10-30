@@ -366,13 +366,13 @@ footer .footer-text h3 {
   padding-top: 40px;
   display: inline-block;
   position: relative;
-  animation: bannermove 220s linear infinite;
-  /* animation-play-state: running; */
+  /* animation: bannermove 220s linear infinite;
+  animation-play-state: running; */
 }
 
-.photobanner:hover {
+/* .photobanner:hover {
   animation-play-state: paused;
-}
+} */
 
 .instapic img {
   height: auto;
@@ -380,14 +380,14 @@ footer .footer-text h3 {
   margin-right: 1.75rem;
   border-radius: 10px;
 }
-/* .instapic:first-child {
+.instapic:first-child {
   animation: bannermove 180s linear infinite;
-} */
+}
 
 
 @keyframes "bannermove" {
   0% {
-    margin-left: 860px;
+    margin-left: -400px;
   }
   100% {
     margin-left: -21560px;
@@ -396,12 +396,35 @@ footer .footer-text h3 {
 
 @-webkit-keyframes "bannermove" {
   0% {
-    margin-left: 860px;
+    margin-left: -400px;
   }
   100% {
     margin-left: -21560px;
   }
 }
+
+@media (min-width: 768px) {
+  @keyframes "bannermove" {
+    0% {
+      margin-left: 860px;
+    }
+    100% {
+      margin-left: -21560px;
+    }
+  }
+
+  @-webkit-keyframes "bannermove" {
+    0% {
+      margin-left: 860px;
+    }
+    100% {
+      margin-left: -21560px;
+    }
+  }
+}
+
+
+
 
 .photobanner img {
   -webkit-transition: all 0.5s ease;
