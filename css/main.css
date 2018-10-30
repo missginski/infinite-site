@@ -366,6 +366,12 @@ footer .footer-text h3 {
   padding-top: 40px;
   display: inline-block;
   position: relative;
+  animation: bannermove 220s linear infinite;
+  /* animation-play-state: running; */
+}
+
+.photobanner:hover {
+  animation-play-state: paused;
 }
 
 .instapic img {
@@ -374,18 +380,10 @@ footer .footer-text h3 {
   margin-right: 1.75rem;
   border-radius: 10px;
 }
-.instapic:first-child {
+/* .instapic:first-child {
   animation: bannermove 180s linear infinite;
-  animation-play-state: running;
-}
+} */
 
-.instapic {
-  animation-play-state: running;
-}
-
-.instapic:hover {
-  animation-play-state: paused;
-}
 
 @keyframes "bannermove" {
   0% {
