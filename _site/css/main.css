@@ -381,32 +381,33 @@ footer .footer-text h3 {
   border-radius: 10px;
 }
 .instapic:first-child {
-  animation: bannermove 180s linear infinite;
+  animation: bannermove 60s linear infinite;
 }
 
 
 @keyframes "bannermove" {
   0% {
     margin-left: -400px;
+    /* margin-left: 0; */
   }
   100% {
-    margin-left: -21560px;
+    margin-left: -11560px;
   }
 }
 
 @-webkit-keyframes "bannermove" {
   0% {
     margin-left: -400px;
+    /* margin-left: 0; */
   }
   100% {
-    margin-left: -21560px;
+    margin-left: -11560px;
   }
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   @keyframes "bannermove" {
     0% {
-      /* margin-left: 860px; */
       margin-left: 0;
     }
     100% {
@@ -416,13 +417,13 @@ footer .footer-text h3 {
 
   @-webkit-keyframes "bannermove" {
     0% {
-      margin-left: 860px;
+      margin-left: 0;
     }
     100% {
       margin-left: -21560px;
     }
   }
-}
+} */
 
 
 
