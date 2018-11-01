@@ -360,8 +360,8 @@ footer .footer-text h3 {
   background-color: #ececec;
 }
 .photobanner {
-  height: 350px;
-  width: 11360px;
+  height: 250px;
+  width: 6600px;
   margin-bottom: 80px;
   padding-top: 40px;
   display: inline-block;
@@ -376,7 +376,7 @@ footer .footer-text h3 {
 
 .instapic img {
   height: auto;
-  max-width: 350px;
+  max-width: 250px;
   margin-right: 1.75rem;
   border-radius: 10px;
 }
@@ -406,7 +406,8 @@ footer .footer-text h3 {
 @media (min-width: 768px) {
   @keyframes "bannermove" {
     0% {
-      margin-left: 860px;
+      /* margin-left: 860px; */
+      margin-left: 0;
     }
     100% {
       margin-left: -21560px;

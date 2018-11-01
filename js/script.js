@@ -73,7 +73,7 @@ var userFeed = new Instafeed({
     template: '<a href="{{link}}" class="instapic" target="_blank" id="{{id}}"><img class="img-responsive" src="{{image}}" /></a>',
     resolution: 'standard_resolution',
     sortBy: 'most-recent',
-    limit: 32,
+    limit: 20,
     links: false
   });
   userFeed.run();
