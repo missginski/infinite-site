@@ -82,24 +82,43 @@ var userFeed = new Instafeed({
 
 
 // render clients section
-function getAllClients(arr) {
-  let currentNames,
-      currentList,
-      listItem;
+// function getAllClients(arr) {
+//   let currentNames,
+//       currentList,
+//       listItem,
+//       lists = $('.mastering li'),
+//       numToShow = 20,
+//       button = $('#show'),
+//       numInList = lists.length;
+//
+//   arr.forEach(function(e, i) {
+//     currentNames = arr[i];
+//     currentList = $('#clients' + i);
+//     currentNames.forEach(function(name) {
+//       listItem = $('<li>');
+//       listItem.text(name);
+//       currentList.append(listItem);
+//     })
+//   })
+//   console.log(lists)
+//
+//   list.slice(0, numToShow).show();
+// }
+// getAllClients(clients)
 
-  arr.forEach(function(e, i) {
-    currentNames = arr[i];
-    currentList = $('#clients' + i);
+// show/hide clients list
+function showHideClients() {
+  let clients = $(".show-more"),
+      btn = $("#show");
 
-    currentNames.forEach(function(name) {
-      listItem = $('<li>');
-      listItem.text(name);
-      currentList.append(listItem);
-    })
+  clients.hide();
+  btn.click(function() {
+    clients.show();
+    btn.text('show less')
   })
-  // console.log(arr)
 }
-getAllClients(clients)
+showHideClients();
+
 
 // render gear section
 function getGear(arr) {
@@ -117,6 +136,6 @@ function getGear(arr) {
       currentList.append(listItem);
     })
   })
-  console.log(currentNames)
+  // console.log(currentNames)
 }
 getGear(newGear)
