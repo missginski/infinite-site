@@ -59,8 +59,6 @@
     }
 
 
-
-
 }());
 
 // instafeed
@@ -79,33 +77,6 @@ var userFeed = new Instafeed({
   userFeed.run();
 
 
-
-
-// render clients section
-// function getAllClients(arr) {
-//   let currentNames,
-//       currentList,
-//       listItem,
-//       lists = $('.mastering li'),
-//       numToShow = 20,
-//       button = $('#show'),
-//       numInList = lists.length;
-//
-//   arr.forEach(function(e, i) {
-//     currentNames = arr[i];
-//     currentList = $('#clients' + i);
-//     currentNames.forEach(function(name) {
-//       listItem = $('<li>');
-//       listItem.text(name);
-//       currentList.append(listItem);
-//     })
-//   })
-//   console.log(lists)
-//
-//   list.slice(0, numToShow).show();
-// }
-// getAllClients(clients)
-
 // show/hide clients list
 function showHideClients() {
   let clients = $(".show-more"),
@@ -113,8 +84,14 @@ function showHideClients() {
 
   clients.hide();
   btn.click(function() {
-    clients.show();
-    btn.text('show less')
+    if (btn.text() === "show less") {
+      clients.hide();
+      btn.text('show more')
+    } else {
+      clients.show();
+      btn.text('show less')
+    }
+
   })
 }
 showHideClients();
