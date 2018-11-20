@@ -108,7 +108,7 @@ h1.logo-dark {
   background-size: cover;
   background-position: top;
   position: relative;
-  margin-top: 4.5rem;
+  margin-top: 2rem;
 }
 .text-box {
   position: absolute;
@@ -123,7 +123,6 @@ h1.logo-dark {
   display: block;
   font-weight: 400;
   letter-spacing: 28px;
-  /* font-size: 2rem; */
 }
 .heading-primary-sub {
   display: block;
@@ -135,7 +134,7 @@ h1.logo-dark {
 main {
 	/* margin-top: 6.75rem; */
   max-width: 1440px;
-  /* margin: 6.75rem auto 0 auto; */
+  margin: 2.75rem auto 0 auto;
 }
 .grid-item {
 	padding: .5rem;

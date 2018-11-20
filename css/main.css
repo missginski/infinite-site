@@ -99,44 +99,7 @@ h1.logo-dark {
 .navbar-wrapper {
 	max-width: 80%;
 }
-.header {
-  height: 65vh;
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.6),
-    rgba(0, 0, 0, .3)),
-    url(../images/banner3.jpg);
-  background-size: cover;
-  background-position: top;
-  position: relative;
-  margin-top: 4.5rem;
-}
-.text-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.heading-primary {
-  color: #fff;
-}
-.heading-primary-main {
-  display: block;
-  font-weight: 400;
-  letter-spacing: 28px;
-  /* font-size: 2rem; */
-}
-.heading-primary-sub {
-  display: block;
-  font-size: 2rem;
-  font-weight: 300;
-  letter-spacing: 10px;
-  padding-top: 2rem;
-}
-main {
-	/* margin-top: 6.75rem; */
-  max-width: 1440px;
-  /* margin: 6.75rem auto 0 auto; */
-}
+
 .grid-item {
 	padding: .5rem;
 }
@@ -480,4 +443,42 @@ footer .footer-text h3 {
   -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
   -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
   box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
+
+.header {
+  height: 65vh;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, .3)),
+    url(../images/banner3.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  margin-top: 4.5rem;
+}
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.heading-primary {
+  color: #fff;
+}
+.heading-primary-main {
+  display: block;
+  font-weight: 400;
+  letter-spacing: 28px;
+}
+.heading-primary-sub {
+  display: block;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 10px;
+  padding-top: 2rem;
+}
+main {
+	/* margin-top: 6.75rem; */
+  max-width: 1440px;
+  /* margin: 6.75rem auto 0 auto; */
 }
