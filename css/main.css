@@ -396,29 +396,6 @@ footer .footer-text h3 {
   }
 }
 
-/* @media (min-width: 768px) {
-  @keyframes "bannermove" {
-    0% {
-      margin-left: 0;
-    }
-    100% {
-      margin-left: -21560px;
-    }
-  }
-
-  @-webkit-keyframes "bannermove" {
-    0% {
-      margin-left: 0;
-    }
-    100% {
-      margin-left: -21560px;
-    }
-  }
-} */
-
-
-
-
 .photobanner img {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -464,6 +441,8 @@ footer .footer-text h3 {
   font-weight: 400;
   letter-spacing: 15px;
   font-size: 1.875rem;
+  font-family: 'Josefin Sans', BebasNeue;
+	font-style: italic;
 }
 .heading-primary-sub {
   display: block;
