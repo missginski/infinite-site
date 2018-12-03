@@ -466,5 +466,6 @@ footer .footer-text h3 {
 main {
 	margin-top: 4.5rem;
   max-width: 1440px;
+  margin: auto;
   /* margin: 6.75rem auto 0 auto; */
 }
